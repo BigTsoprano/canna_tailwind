@@ -4,10 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3001",
-    "build": "next build && next export -o output",
+    "build": "next build",
     "start": "next start",
     "serve": "serve output",
-    "lint": "next lint"
+    "export": "next export",
+"lint": "next lint",
+"lint-fix": "next lint --fix"
+
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
