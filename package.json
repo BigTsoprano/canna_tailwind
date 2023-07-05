@@ -22,6 +22,7 @@
     "@mux/videojs-kit": "^0.11.4",
     "@next/font": "13.1.6",
     "@react-google-maps/api": "^2.18.1",
+    "@tailwindcss/jit": "^0.1.18",
     "firebase": "^8.5.0",
     "framer-motion": "^10.0.1",
     "google-maps-react": "^2.0.6",
