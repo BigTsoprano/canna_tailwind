@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "serve": "serve output",
-    "export": "next export",
+    "export": "export -o output",
 "lint": "next lint",
 "lint-fix": "next lint --fix"
 
