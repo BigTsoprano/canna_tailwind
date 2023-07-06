@@ -1,7 +1,18 @@
 import Image from "next/image";
-import Gmaps from "./Gmaps";
+import { useEffect, useState } from 'react'
+import { useFirestore } from '../hooks/useFirestore'
 const Footer = () => {
-   
+    const [email, setEmail] = useState('')
+
+    const { addDocument, response } = useFirestore('emailForPromotions')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        addDocument({
+            email
+        })
+        setEmail('')
+    }
 
     const footerNavs = [
         {
@@ -140,7 +151,7 @@ Canna                    </p>
             </div>
             <div style={{display:'flex', flexDirection:'column'}} className="" >
             <form 
-                    onSubmit={(e) => e.preventDefault()}
+                    onSubmit={handleSubmit}
                 >
                     <label className="block pt-4 pb-2">
                         Stay up to date
@@ -148,7 +159,10 @@ Canna                    </p>
                     <div className="max-w-sm flex items-center  rounded p-1">
                         <input 
                         style={{borderRadius:'5px 0 0 5px'}}
-                            type="email"
+                        type="text"
+                        required
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
                             placeholder="Enter your email"
                             className="w-full p-2.5 outline-non bg-slate-50 text-black"
                         />

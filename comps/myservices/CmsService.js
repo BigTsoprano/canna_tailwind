@@ -6,15 +6,13 @@ function CmsService() {
     <div className="mx-auto sm:text-center lg:max-w-2xl">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-            Brand new
-          </p>
+       
         </div>
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
-              fill="currentColor"
+              fill="#31B237"
               className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
             >
               <defs>
@@ -34,26 +32,27 @@ function CmsService() {
                 height="24"
               />
             </svg>
-            <span className="relative">The</span>
+            <span className="relative">A </span>
           </span>{' '}
-          quick, brown fox jumps over a lazy dog
+          content management system (cms)
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque rem aperiam, eaque ipsa quae.
+        CMS software is designed to be user-friendly, with an intuitive
+              interface that makes it easy for non-technical users to create and
+              manage content.
         </p>
       </div>
       <div className="mb-4 transition-shadow duration-300 hover:shadow-xl lg:mb-6">
         <img
           className="object-cover w-full h-56 rounded shadow-lg sm:h-64 md:h-80 lg:h-96"
-          src="https://images.pexels.com/photos/3727459/pexels-photo-3727459.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+          src="/cms_img.png"
           alt=""
         />
       </div>
       <p className="max-w-xl mb-4 text-base text-gray-700 sm:mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud ullamco laboris aliquip ex ea.
+      This means that users can focus on creating
+              content, rather than worrying about the technical details of how
+              to publish it
       </p>
       <a
         href="/"

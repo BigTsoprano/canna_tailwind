@@ -1,12 +1,6 @@
 {
   "/_app": "pages/_app.js",
-  "/api/hello": "pages/api/hello.js",
-  "/becomeapartner": "pages/becomeapartner.html",
-  "/_document": "pages/_document.js",
-  "/about": "pages/about.html",
-  "/": "pages/index.html",
   "/_error": "pages/_error.js",
-  "/services": "pages/services.html",
-  "/price": "pages/price.html",
-  "/404": "pages/404.html"
+  "/_document": "pages/_document.js",
+  "/services/ecommerce": "pages/services/ecommerce.js"
 }

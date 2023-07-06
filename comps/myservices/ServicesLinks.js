@@ -3,12 +3,13 @@ import Image from 'next/image'
 
 export default function ServicesLinks() {
   return (
-    <section className="px-4 py-24 mx-auto max-w-7xl">
+    <section className="px-4 bg-white py-24 mx-auto max-w-7xl">
     <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
       <div>
-        <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl">Clear overview for efficient tracking</h2>
+        <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl">Ecommerce</h2>
         <p className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
-          Handle your subscriptions and transactions efficiently with the clear overview in Dashboard. Features like the smart search option allow you to quickly find any data you’re looking for.
+        We offer a powerful and flexible e-commerce platform that provides
+              a lot of features and customization options.
         </p>
         <a 
                     className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
@@ -24,20 +25,21 @@ export default function ServicesLinks() {
                 }
             `}</style>     
              </div>
-      <div className=" py-48">
+      <div className=" py-8">
       <Image width={300} height={300}
       className='w-full h-5/6'
-            src="/service_cart.png"
+            src="/services_ecomm.png"
             alt="ecommerce"
           />
       </div>
     </div>
     <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
       <div className="order-none md:order-2">
-        <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl">Decide how you integrate Payments</h2>
+        <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl">Native branding</h2>
         <p className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
-          Love to code? Next to our ready-made and free plugins you can use our expansive yet simple API; decide how you integrate Payments and build advanced and reliable products yourself from
-          scratch.
+        We help you build your brand and grow your business. Dont settle
+              for someone elses brand, make yours unique
+
         </p>
         <a 
                     className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
@@ -53,17 +55,12 @@ export default function ServicesLinks() {
                 }
             `}</style>
       </div>
-      <div className="py-48 ">   <video
-            className='w-full h-full '
-            style={{ width: "auto", height: "450px" }}
-            source
-            src="/service_brand.mp4"
-            type="video/mp4"
-            playsInline
-            autoPlay
-            loop
-            muted
-          ></video></div>
+      <div className="py-8 ">  
+    <Image width={300} height={300}  className='w-full rounded shadow-lg h-5/6'
+            src="/services_brand.png"
+            alt="ecommerce"
+          />
+          </div>
     </div>
     
   </section>
