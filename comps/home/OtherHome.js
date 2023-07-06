@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function OtherHome() {
   return (
@@ -32,7 +33,7 @@ function OtherHome() {
 
     <div className="grid gap-6 row-gap-5 lg:grid-cols-4">
       <div>
-        <img
+      <Image width={300} height={300}
           className="object-cover w-full h-48 shadow-md mb-6 rounded"
           src="/other_pos.png"
           alt=""
@@ -58,7 +59,7 @@ function OtherHome() {
             `}</style>
       </div>
       <div>
-        <img
+      <Image width={300} height={300}
           className="object-cover w-full h-48 shadow-md mb-6 rounded"
           src="/other_b2b.png"
           alt=""
@@ -84,7 +85,7 @@ function OtherHome() {
             `}</style>
       </div>
       <div>
-        <img
+      <Image width={300} height={300}
           className="object-cover w-full h-48 shadow-md mb-6 rounded"
           src="/other_seed.png"
           alt=""
@@ -110,8 +111,8 @@ function OtherHome() {
             `}</style>
       </div>
       <div>
-        <img
-          className="object-cover w-full h-48 shadow-md mb-6 rounded"
+      <Image width={300} height={300}
+                className="object-cover w-full h-48 shadow-md mb-6 rounded"
           src="/other_delivery.png"
           alt=""
         />

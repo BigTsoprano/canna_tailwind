@@ -1,5 +1,6 @@
 import React from 'react'
 import MuseumOutlinedIcon from '@mui/icons-material/MuseumOutlined';
+import Image from 'next/image'
 import LockOpenOutlinedIcon from '@mui/icons-material/LockOpenOutlined';
 
 function CmsFeatures() {
@@ -53,7 +54,7 @@ function CmsFeatures() {
             </div>
         </div>
         <div className="mt-12 lg:mt-0">
-            <img src="/cms_img.png" className="w-full shadow-lg rounded-lg border" />
+        <Image width={300} height={300} src="/cms_img.png" className="w-full shadow-lg rounded-lg border" />
             </div>
     </div>
 </section>

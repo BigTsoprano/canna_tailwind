@@ -2,11 +2,11 @@ import React from 'react'
 
 function ServiceHeader() {
   return (
-    <div className="relative bg-gray-900">
+    <div className="relative bg-slate-900">
     <div className="absolute inset-x-0 bottom-0">
       <svg
         viewBox="0 0 224 12"
-        fill="currentColor"
+        fill="#F8FAFC"
         className="w-full -mb-1 text-white"
         preserveAspectRatio="none"
       >

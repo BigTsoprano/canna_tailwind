@@ -3,6 +3,7 @@ import VolunteerActivismOutlinedIcon from '@mui/icons-material/VolunteerActivism
 import PlaylistAddCheckOutlinedIcon from '@mui/icons-material/PlaylistAddCheckOutlined';
 import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
 import DataThresholdingOutlinedIcon from '@mui/icons-material/DataThresholdingOutlined';
+import Image from "next/image";
 
 const about = () => {
   return (
@@ -174,7 +175,7 @@ const about = () => {
        
         </div>
         <div>
-          <img
+        <Image width={300} height={300}
             className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
             src="/about_nj.png"
             alt=""

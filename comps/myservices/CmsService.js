@@ -1,8 +1,9 @@
 import React from 'react'
+import Image from 'next/image'
 
 function CmsService() {
   return (
-    <div className="px-4 py-16 bg-gray-100 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 py-16 bg-slate-50 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
     <div className="mx-auto sm:text-center lg:max-w-2xl">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
@@ -43,7 +44,7 @@ function CmsService() {
         </p>
       </div>
       <div className="mb-4 transition-shadow duration-300 hover:shadow-xl lg:mb-6">
-        <img
+      <Image width={300} height={300}
           className="object-cover w-full h-56 rounded shadow-lg sm:h-64 md:h-80 lg:h-96"
           src="/cms_img.png"
           alt=""

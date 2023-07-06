@@ -1,6 +1,7 @@
 import React from 'react'
 import MuxVideo from "@mux/mux-video-react";
 import Link from 'next/link';
+import Image from 'next/image';
 
 function Demos() {
   return (
@@ -56,7 +57,9 @@ function Demos() {
       <div className="flex flex-col  justify-between p-5 sm:p-10 lg:w-1/2">
         <div >
 
-      <img style={{
+        <Image width={300} height={300}
+      
+      style={{
    //backgroundColor:'#000',
     //borderRadius: '6px',
    // height:'auto',

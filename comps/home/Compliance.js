@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Compliance = () => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl bg-slate-50 md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -26,9 +28,9 @@ export const Compliance = () => {
                 height="24"
               />
             </svg>
-            <span style={{whiteSpace:'nowrap'}} className="relative">Keeping your software compliant</span>
+            <span style={{whiteSpace:'nowrap'}} className="relative">Keeping your software</span>
           </span>{" "}
-           in a regulated industry
+          compliant in a regulated industry
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
           The consequences for non-compliance range from a hefty fine to the
@@ -38,17 +40,17 @@ export const Compliance = () => {
       </div>
       <div className="grid max-w-screen-xl gap-20 lg:grid-cols-2 sm:mx-auto">
         <div className="grid grid-cols-2 gap-5">
-          <img
+        <Image width={300} height={300}
             className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
             src="/compliance_one.png"
             alt=""
           />
-          <img
+           <Image width={300} height={300}
             className="object-cover w-full h-48 rounded shadow-lg"
             src="/software_two.png"
             alt=""
           />
-          <img
+         <Image width={300} height={300}
             className="object-cover w-full h-48 rounded shadow-lg"
             src="/iso_compliance.png"
             alt=""
