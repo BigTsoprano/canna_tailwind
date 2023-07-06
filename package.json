@@ -7,10 +7,7 @@
     "build": "next build",
     "start": "next start",
     "serve": "serve output",
-    "export": "export -o output",
-"lint": "next lint",
-"lint-fix": "next lint --fix"
-
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -29,7 +26,7 @@
     "firebase": "^8.5.0",
     "framer-motion": "^10.0.1",
     "google-maps-react": "^2.0.6",
-    "next": "13.1.6",
+    "next": "13.1.6", 
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sharp": "^0.32.0",
