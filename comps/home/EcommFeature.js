@@ -166,11 +166,12 @@ function EcommFeature() {
    }}
    playbackId="Uzl7Kht5tkVL1v4p00CytdFH3k801mrjSkfA00uKJknlr4"
    metadata={{
-     video_id: "video-id-123456",
-     video_title: "Super Interesting Video",
-     viewer_user_id: "user-id-bc-789",
+     video_id: "video-id-1234526",
+     video_title: "Super Interesting Video1",
+     viewer_user_id: "user-id-bc-as",
    }}
    streamType="on-demand"
+   playsInline
    autoPlay
    muted
    loop

@@ -27,11 +27,12 @@ export default function Hero() {
    }}
    playbackId="CXBX02Ds4bKeMmQYLKPgbFOjaMKLPhZ00hov101OflqAEA"
    metadata={{
-     video_id: "video-id-123456",
-     video_title: "Super Interesting Video",
-     viewer_user_id: "user-id-bc-789",
+     video_id: "video-id-12345612",
+     video_title: "hero video",
+     viewer_user_id: "user-id-bc-789223",
    }}
    streamType="on-demand"
+   playsInline
    autoPlay
    muted
    loop

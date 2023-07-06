@@ -30,6 +30,7 @@ function Demos() {
    }}
    streamType="on-demand"
    autoPlay
+   playsInline
    muted
    loop
  ></MuxVideo>
@@ -73,6 +74,7 @@ function Demos() {
     viewer_user_id: "user-id-bc-789",
   }}
   streamType="on-demand"
+  playsInline
   autoPlay
   muted
   loop
