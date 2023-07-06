@@ -19,20 +19,20 @@ const Footer = () => {
             label: "Company",
             items: [
                 {
-                    href: 'javascript:void()',
-                    name: 'Partners'
+                    href: '/services',
+                    name: 'Services'
                 },
                 {
-                    href: 'javascript:void()',
-                    name: 'Blog'
+                    href: '/about',
+                    name: 'About us'
                 },
                 {
-                    href: 'javascript:void()',
-                    name: 'Team'
+                    href: '/price',
+                    name: 'Pricing'
                 },
                 {
-                    href: 'javascript:void()',
-                    name: 'Careers'
+                    href: 'https://demo.01ninjas.com/',
+                    name: 'Demo'
                 },
             ],
         },
@@ -40,42 +40,39 @@ const Footer = () => {
             label: "Resources",
             items: [
                 {
-                    href: 'javascript:void()',
-                    name: 'contact'
+                    href: '/services/ecommerce',
+                    name: 'Ecommerce'
                 },
                 {
-                    href: 'javascript:void()',
-                    name: 'Support'
+                    href: '/services',
+                    name: 'Branding'
                 },
                 {
-                    href: 'javascript:void()',
-                    name: 'Docs'
+                    href: '/services',
+                    name: 'Custom software'
                 },
                 {
-                    href: 'javascript:void()',
-                    name: 'Pricing'
+                    href: '/services',
+                    name: 'CMS'
+                },
+                {
+                    href: '/services',
+                    name: 'IT services'
                 },
             ],
         },
         {
-            label: "About",
+            label: "More",
             items: [
                 {
                     href: 'javascript:void()',
                     name: 'Terms'
                 },
                 {
-                    href: 'javascript:void()',
-                    name: 'License'
+                    href: '/becomeapartner',
+                    name: 'Join us'
                 },
-                {
-                    href: 'javascript:void()',
-                    name: 'Privacy'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'About US'
-                },
+        
             ]
         }
     ]

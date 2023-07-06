@@ -94,7 +94,7 @@ useEffect(() => {
             </li>
             <li>
               <a
-                href="/"
+                href="/about"
                 aria-label="Our product"
                 title="Our product"
                 className="text-base  tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
@@ -104,7 +104,7 @@ useEffect(() => {
             </li>
             <li>
               <a
-                href="/"
+                href="/price"
                 aria-label="Product pricing"
                 title="Product pricing"
                 className="text-base  tracking-wide text-slate-50 transition-colors duration-200 hover:text-teal-accent-400"
@@ -114,7 +114,7 @@ useEffect(() => {
             </li>
             <li>
               <a
-                href="/"
+                href="https://demo.01ninjas.com/"
                 aria-label="About us"
                 title="About us"
                 className="text-base  tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
@@ -126,7 +126,7 @@ useEffect(() => {
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
             <a
-              href="#"
+              href="/becomeapartner"
               className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started
@@ -180,27 +180,27 @@ useEffect(() => {
                     <ul className="space-y-4">
                       <li>
                         <a
-                          href="/"
+                          href="/services"
                           aria-label="Our product"
                           title="Our product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Product
+                          Services
                         </a>
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="/about"
                           aria-label="Our product"
                           title="Our product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Features
+                          About us
                         </a>
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="/price"
                           aria-label="Product pricing"
                           title="Product pricing"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -210,17 +210,18 @@ useEffect(() => {
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="https://demo.01ninjas.com/"
                           aria-label="About us"
                           title="About us"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          About us
+                          Demo
                         </a>
                       </li>
                       <li>
                       <a
-              href="#"
+                      style={{color:'#fff !important'}}
+              href="/becomingapartner"
               className="rounded-md bg-slate-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started

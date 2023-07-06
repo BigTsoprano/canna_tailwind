@@ -21,7 +21,7 @@ export default () => {
           />,
             title: "Ecommerce",
             desc: "Maximize your online reach and boost sales with a cutting-edge, fully automated ecommerce system that operates in real-time.",
-            link: "https://google.com"
+            link: "/services"
         },
         {
             icon:
@@ -34,7 +34,8 @@ export default () => {
             }}
           />,
             title: "Branding",
-            desc: "As a cannabis business grows, a software can easily scale with the business."
+            desc: "As a cannabis business grows, a software can easily scale with the business.",
+            link: "/services"
         },
         {
             icon:
@@ -48,7 +49,8 @@ export default () => {
             />,
 
             title: "Custom software",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius."
+            desc: "We understand the unique challenges and opportunities within this fast-growing industry",
+            link: "/services"
         },
         {
             icon:
@@ -60,7 +62,8 @@ export default () => {
                    
                   }}/>,
             title: "Content Management",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius."
+            desc: "Digitally Streamlining Your Seed-to-Sale Process for Enhanced Customer Engagement and Elevated Growth.",
+            link: "/services"
         },
         {
             icon:
@@ -72,7 +75,8 @@ export default () => {
                    
                   }}/>,
             title: "IT services",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius."
+            desc: "Tailored specifically for the cannabis industry, we provide robust and reliable IT solutions that address your unique needs.",
+            link: "/services"
         },
         {
             icon:
@@ -84,7 +88,8 @@ export default () => {
                    
                   }}/>,
             title: "Data services",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius."
+            desc: " Our data solutions equip you with the knowledge you need to make informed decisions, drive growth, and maximize profitability in the cannabis market.",
+            link: "/services"
         },
     ]
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import MuxVideo from "@mux/mux-video-react";
+import Link from 'next/link';
 
 function Demos() {
   return (
@@ -43,20 +44,19 @@ function Demos() {
             quae. explicabo.
           </p> */}
         </div>
+        <Link href="https://demo.01ninjas.com">
           <button
             type="submit"
             className="rounded-md hover:border-2 hover:border-4-black bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white w hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-60"
           >
             View demo
           </button>
-          
+          </Link>
       </div>
       <div className="flex flex-col  justify-between p-5 sm:p-10 lg:w-1/2">
         <div >
 
-        <MuxVideo
-  className='mux_video'
-  style={{
+      <img style={{
    //backgroundColor:'#000',
     //borderRadius: '6px',
    // height:'auto',
@@ -66,19 +66,7 @@ function Demos() {
     // border:'1px solid #292929',
    //   position:'absolute'
  //  boxShadow: 'rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px'
-  }}
-  playbackId="QMPOEHO2sE02ctBk638ki02KmQQCpKxDIeUytL2gdzOfA"
-  metadata={{
-    video_id: "video-id-123456",
-    video_title: "Super Interesting Video",
-    viewer_user_id: "user-id-bc-789",
-  }}
-  streamType="on-demand"
-  playsInline
-  autoPlay
-  muted
-  loop
-></MuxVideo>
+  }} className='mux_video' src='/demo_demo.png' />
 
           <h5 style={{paddingTop:'25px'}} className="max-w-md mb-6 text-3xl text-black font-extrabold leading-none sm:text-4xl">
             Our advanced cart<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#18981D] to-[#51CA58]"> ecommerce store demo</span>
@@ -89,13 +77,14 @@ function Demos() {
             quae. explicabo.
           </p> */}
         </div>
+        <Link href="https://demo.01ninjas.com">
         <button
             type="submit"
             className="rounded-md hover:border-2 hover:border-4-black bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white w hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-60"
           >
             View demo
           </button>
-       
+       </Link>
       </div>
     </div>
   </div>

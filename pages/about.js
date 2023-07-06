@@ -208,7 +208,7 @@ const about = () => {
             <p className="text-lg font-bold">Shanon McDonald</p>
             <p className="mb-4 text-xs text-gray-800">Full-stack developer</p>
             <p className="mb-4 text-sm tracking-wide text-gray-800">
-              I love coding.
+             
             </p>
             <div className="flex items-center space-x-3">
               <a
@@ -242,7 +242,7 @@ const about = () => {
             <p className="text-lg font-bold">Tai Dang</p>
             <p className="mb-4 text-xs text-gray-800">Full-stack developer</p>
             <p className="mb-4 text-sm tracking-wide text-gray-800">
-              I love coding.
+             
             </p>
             <div className="flex items-center space-x-3">
               <a
@@ -346,11 +346,10 @@ const about = () => {
                         Build the future with us
                     </p>
                     <p className="text-blue-100 mt-3">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.
-                    </p>
+                    As we pave the way for the future of cannabis software, we are committed to bringing cutting-edge technologies, advanced analytics, and dynamic solutions to the table.                    </p>
                 </div>
                 <div className="mt-4">
-                    <a href="javascript:void(0)" className="inline-block py-2 px-4 text-gray-800 font-medium bg-white duration-150 hover:bg-gray-100 active:bg-gray-200 rounded-full">
+                    <a href="/becomeapartner" className="inline-block py-2 px-4 text-gray-800 font-medium bg-white duration-150 hover:bg-gray-100 active:bg-gray-200 rounded-full">
                         Get started
                     </a>
                 </div>

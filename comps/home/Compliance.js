@@ -45,7 +45,7 @@ export const Compliance = () => {
           />
           <img
             className="object-cover w-full h-48 rounded shadow-lg"
-            src="/hippa_compliance.png"
+            src="/software_two.png"
             alt=""
           />
           <img

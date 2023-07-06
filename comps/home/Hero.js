@@ -25,7 +25,7 @@ export default function Hero() {
       position:'absolute'
     
    }}
-   playbackId="CXBX02Ds4bKeMmQYLKPgbFOjaMKLPhZ00hov101OflqAEA"
+   playbackId="XOQ6gUAS5Z302GKG02pARpKlD6QM1vKZXTcWdbDhUGm02k"
    metadata={{
      video_id: "video-id-12345612",
      video_title: "hero video",
@@ -44,7 +44,7 @@ export default function Hero() {
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-gray-600 hover:ring-green-300">
             Announcing our new store demo update.{' '}
-            <a href="#" className="font-semibold text-green-500">
+            <a href="https://demo.01ninjas.com" className="font-semibold text-green-500">
               <span className="absolute inset-0" aria-hidden="true" />
               View demo <span aria-hidden="true">&rarr;</span>
             </a>
@@ -60,12 +60,12 @@ export default function Hero() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="#"
+              href="/becomeaparnter"
               className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started
             </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-green-500">
+            <a href="/about" className="text-sm font-semibold leading-6 text-green-500">
               Learn more <span aria-hidden="true">→</span>
             </a>
            
