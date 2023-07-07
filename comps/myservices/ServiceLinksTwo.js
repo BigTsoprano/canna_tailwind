@@ -26,7 +26,7 @@ function ServiceLinksTwo() {
             `}</style>
       </div>
       <div className="py-8 ">  
-    <Image width={300} height={300}  className='w-full  h-5/6'
+    <Image width={600} height={600}  className='w-full  h-5/6'
             src="/services_custom.png"
             alt="ecommerce"
           />
@@ -54,7 +54,7 @@ function ServiceLinksTwo() {
             `}</style>
       </div>
       <div className="py-8 ">  
-    <Image width={300} height={300}  className='w-full  h-5/6'
+    <Image width={600} height={600}  className='w-full  h-5/6'
             src="/services_support.png"
             alt="ecommerce"
             style={{borderRadius:'6px',boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}}
@@ -82,7 +82,7 @@ function ServiceLinksTwo() {
             `}</style>
       </div>
       <div className="py-8 ">  
-    <Image style={{maxHeight:'400px'}} width={300} height={300}  className='w-auto  h-5/6'
+    <Image style={{maxHeight:'400px'}} width={600} height={500}  className='w-auto  h-5/6'
             src="/services_pos.png"
             alt="ecommerce"
           />
@@ -111,7 +111,7 @@ function ServiceLinksTwo() {
             `}</style>
       </div>
       <div className="py-8 ">  
-    <Image style={{maxHeight:'400px'}} width={300} height={300}  className='w-auto  h-5/6'
+    <Image style={{maxHeight:'400px'}} width={700} height={700}  className='w-auto  h-5/6'
             src="/services_seed.png"
             alt="ecommerce"
           />

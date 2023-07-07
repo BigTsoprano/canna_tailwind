@@ -59,6 +59,18 @@ const Footer = () => {
                     href: '/services',
                     name: 'IT services'
                 },
+                {
+                    href: '/services',
+                    name: 'Pos system'
+                },
+                {
+                    href: '/services',
+                    name: 'MarketplaceB2B'
+                },
+                {
+                    href: '/services',
+                    name: 'Management software'
+                },
             ],
         },
         {
@@ -108,7 +120,7 @@ Canna                    </p>
                
             </div>
           
-            <div className="flex-1 text-slate-50 mt-10 space-y-6 items-center justify-between sm:flex md:space-y-0 md:mt-0">
+            <div style={{alignItems:'flex-start'}} className="flex-1 text-slate-50 mt-10 space-y-6  justify-between sm:flex md:space-y-0 md:mt-0">
                 
                 {
                     footerNavs.map((item, idx) => (

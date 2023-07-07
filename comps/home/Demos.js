@@ -57,7 +57,7 @@ function Demos() {
       <div className="flex flex-col  justify-between p-5 sm:p-10 lg:w-1/2">
         <div >
 
-        <Image width={300} height={300}
+        <Image width={600} height={600}
       
       style={{
    //backgroundColor:'#000',

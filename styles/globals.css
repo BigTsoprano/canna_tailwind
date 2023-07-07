@@ -114,7 +114,7 @@ h3{
  
  }
  .navbar a{
-   color: #fff;
+   color: #31B237;
  }
 
  .navbar.active{
@@ -124,6 +124,15 @@ border-bottom: 1px solid #292929;
  }
  .navbar.active a{
    color: #000;
+   font-weight: 500;
+   text-shadow: none;
+   
+ }
+ .navbar a:hover{
+    color: #31B237;
+    text-shadow: none;
+    transition: all 0.1s ease-in-out .1s;
+    font-weight: 600;
  }
  .mux_video:hover{
   box-shadow: none !important;

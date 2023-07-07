@@ -70,54 +70,54 @@ useEffect(() => {
       <div className={navbar ? 'navbar active' : 'navbar'}>
       <div style={{width:'100%'}} className="px-4 flex items-center justify-between py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       
-          <a
+          <Link
             href="/"
-            aria-label="Company"
-            title="Company"
+            
             className="inline-flex items-center"
+            style={{letterSpacing:'normal !important'}}
           >
             <Image src="/ninjas_logo.svg" width={30} height={30} />
             <span className="ml-2 text-xl text-green-500 font-bold tracking-wide text-gray-100 ">
               Canna
             </span>
-          </a>
+          </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
-            <li>
+            <li > 
               <a
                 href="/services"
                 aria-label="Our product"
                 title="Our product"
-                className="text-base tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
+                className="text-base font-semibold tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Services
               </a>
             </li>
-            <li>
+            <li >
               <a
                 href="/about"
                 aria-label="Our product"
                 title="Our product"
-                className="text-base  tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
+                className="text-base font-semibold tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
               >
                 About us
               </a>
             </li>
-            <li>
+            <li >
               <a
                 href="/price"
                 aria-label="Product pricing"
                 title="Product pricing"
-                className="text-base  tracking-wide text-slate-50 transition-colors duration-200 hover:text-teal-accent-400"
+                className="text-base font-semibold tracking-wide text-slate-50 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Pricing
               </a>
             </li>
-            <li>
+            <li >
               <a
                 href="https://demo.01ninjas.com/"
                 aria-label="About us"
                 title="About us"
-                className="text-base  tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
+                className="text-base font-semibold tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Demo
               </a>
@@ -125,12 +125,13 @@ useEffect(() => {
           </ul>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
-            <a
-              href="/becomeapartner"
+              <Link href="/becomeapartner">
+            <button
               className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started
-            </a>
+            </button>
+            </Link>
             </li>
           </ul>
           <div className="lg:hidden">
@@ -172,7 +173,8 @@ useEffect(() => {
                   </div>
                   <nav className="">
                     <ul className="space-y-4">
-                      <li>
+                      <li style={{textShadow: '-1px 1px 0 #000,1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000'}}>
+                       
                         <a
                           href="/services"
                           aria-label="Our product"

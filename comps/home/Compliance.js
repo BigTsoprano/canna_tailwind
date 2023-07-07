@@ -40,7 +40,7 @@ export const Compliance = () => {
       </div>
       <div className="grid max-w-screen-xl gap-20 lg:grid-cols-2 sm:mx-auto">
         <div className="grid grid-cols-2 gap-5">
-        <Image width={300} height={300}
+        <Image width={700} height={500}
             className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
             src="/compliance_one.png"
             alt=""
