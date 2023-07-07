@@ -21,7 +21,7 @@ export default () => {
           />,
             title: "Ecommerce",
             desc: "Maximize your online reach and boost sales with a cutting-edge, fully automated ecommerce system that operates in real-time.",
-            link: "/services"
+            link: "/services/ecommerce"
         },
         {
             icon:
@@ -35,7 +35,7 @@ export default () => {
           />,
             title: "Branding",
             desc: "As a cannabis business grows, a software can easily scale with the business.",
-            link: "/services"
+            link: "/services/branding"
         },
         {
             icon:
