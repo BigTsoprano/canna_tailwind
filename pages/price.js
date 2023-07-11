@@ -106,15 +106,16 @@ const features = [
 
   return (
     <section>
-    <div   className="relative z-4">
-      <div>
+    <div   className="relative bg-white z-4">
+      <div className="hero_backdrop2"></div>
+      <div className="z-1">
     <img
-      src="https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-      className="absolute inset-0 object-cover w-full h-full"
+      src="/price_header.png"
+      className="absolute inset-0  object-cover w-full h-full"
       alt=""
     />
     </div>
-    <div className="relative bg-opacity-75 bg-deep-purple-accent-700">
+    <div style={{zIndex:'3'}} className="relative bg-opacity-75 bg-deep-purple-accent-700">
       <svg style={{marginBottom:'-10px'}}
         className="absolute inset-x-0 bottom-0 text-white"
         viewBox="0 0 1160 163"
@@ -124,31 +125,21 @@ const features = [
           d="M-164 13L-104 39.7C-44 66 76 120 196 141C316 162 436 152 556 119.7C676 88 796 34 916 13C1036 -8 1156 2 1216 7.7L1276 13V162.5H1216C1156 162.5 1036 162.5 916 162.5C796 162.5 676 162.5 556 162.5C436 162.5 316 162.5 196 162.5C76 162.5 -44 162.5 -104 162.5H-164V13Z"
         />
       </svg>
-      <div className="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div style={{zIndex:'3'}} className="relative px-4  py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="flex flex-col items-center justify-between xl:flex-row">
           <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-              The quick, brown fox <br className="hidden md:block" />
-              jumps over a lazy dog
+            $0 upfront costs for<br className="hidden md:block" />
+          any plan of six months or longer
             </h2>
-            <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudan, totam rem aperiam, eaque ipsa
-              quae.
+            <p className="max-w-xl mb-4 text-base text-slate-50 md:text-lg">
+            Experience our state-of-the-art cannabis software solutions without any initial costs when you sign up for a plan of six months or more. We believe in the value of our services and want to make them as accessible as possible. That's why we've designed our pricing structure to allow you to start using our software right away,.
             </p>
             <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
+              href="/becomeaparnter"
+              className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Learn more
-              <svg
-                className="inline-block w-3 ml-2"
-                fill="currentColor"
-                viewBox="0 0 12 12"
-              >
-                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-              </svg>
+              Get started
             </a>
           </div>
           <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
@@ -194,16 +185,15 @@ const features = [
 			<textarea id="message" type="text" placeholder="Message..." className="block w-full p-2 border border-gray-300  shadow-sm rounded autoexpand focus:outline-none focus:ring focus:ri focus:ri dark:bg-white"></textarea>
                 </div>
                 <div className="mt-4 mb-2 sm:mb-4">
-                  <button
-                    type="submit"
-                    className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                  >
-                    Subscribe
-                  </button>
+                <button
+              type="submit"
+              className="rounded-md bg-green-500 px-3.5 py-2.5 inline-flex items-center justify-center w-full h-12 px-6 text-sm font-semibold text-white shadow-sm hover:bg-slate-200 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Submit
+            </button>
+                 
                 </div>
-                <p className="text-xs text-gray-600 sm:text-sm">
-                  We respect your privacy. Unsubscribe at any time.
-                </p>
+            
               </form>
             </div>
           </div>
@@ -317,7 +307,7 @@ const features = [
 
 {/* new section */}
 
-<div  className='relative py-14 z-5 bg-white'>
+<div  className='relative py-14 z-5 bg-slate-50'>
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className='relative max-w-xl mx-auto sm:text-center'>
                     <h3 className='text-gray-800 text-3xl font-semibold sm:text-4xl'>
