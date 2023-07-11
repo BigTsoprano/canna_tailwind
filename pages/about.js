@@ -201,7 +201,7 @@ const about = () => {
           <div className="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
             <img
               className="absolute object-cover w-full h-full rounded"
-              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+              src="/about_shanon.JPEG"
               alt="Person"
             />
           </div>
@@ -235,7 +235,7 @@ const about = () => {
           <div className="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
             <img
               className="absolute object-cover w-full h-full rounded"
-              src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="/about_tai.JPEG"
               alt="Person"
             />
           </div>
