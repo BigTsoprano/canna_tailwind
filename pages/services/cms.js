@@ -1,71 +1,62 @@
 import React from 'react'
+import Image from 'next/image'
+import BorderColorOutlinedIcon from '@mui/icons-material/BorderColorOutlined';
+import LanOutlinedIcon from '@mui/icons-material/LanOutlined';
+import ManageAccountsOutlinedIcon from '@mui/icons-material/ManageAccountsOutlined';
+import PermMediaOutlinedIcon from '@mui/icons-material/PermMediaOutlined';
+import MediationOutlinedIcon from '@mui/icons-material/MediationOutlined';
+import HubOutlinedIcon from '@mui/icons-material/HubOutlined';
 
 function cms() {
     const features = [
         {
             icon:
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                </svg>,
-            title: "Fast Refresh",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius."
+                <BorderColorOutlinedIcon/>,
+            title: "Easy editor",
+            desc: "Within just a couple of minutes, you'll transform from a novice to a seasoned user, navigating with ease and efficiency."
         },
         {
             icon:
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-                </svg>,
-            title: "Analytics",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius."
+                <LanOutlinedIcon/>,
+            title: "Seamless Integration",
+            desc: " Our CMS software is designed to blend seamlessly with your existing operational systems. "
         },
         {
             icon:
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-                </svg>,
-            title: "Datacenter security",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius."
+                <ManageAccountsOutlinedIcon/>,
+            title: "Roles and Permissions",
+            desc: "Gives you complete control over access within your team to delegate specific responsibilities to different team members."
         },
         {
             icon:
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
-                </svg>,
-            title: "Build on your terms",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius."
+                <PermMediaOutlinedIcon/>,
+            title: "Media Files Management",
+            desc: "Our CMS comes equipped with a comprehensive media library that can effortlessly handle all types of media files. "
         },
         {
             icon:
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-                </svg>,
-            title: "Safe to use",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius."
+                <MediationOutlinedIcon/>,
+            title: "Omnichannel Management",
+            desc: "Our CMS system provides a single, unified platform from which you can effortlessly manage multiple store sites. "
         },
         {
             icon:
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
-                </svg>,
-            title: "Flexible",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius."
+                <HubOutlinedIcon/>,
+            title: "Flexible Management",
+            desc: "Tracking and updating your diverse product range, overseeing your inventory levels, processing payments, to nurturing customer relationships."
         },
     ]
   return (
     <section>
-    <div className="flex flex-col items-center justify-center px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-32 md:px-0">
+    <div className="flex bg-slate-50 flex-col items-center justify-center px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-32 md:px-0">
       <div className="flex flex-col items-center max-w-2xl md:px-8">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-          <div>
-            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-              Brand new
-            </p>
-          </div>
+         
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
             <span className="relative inline-block">
               <svg
                 viewBox="0 0 52 24"
-                fill="currentColor"
+                fill="#31B237"
                 className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
               >
                 <defs>
@@ -85,13 +76,12 @@ function cms() {
                   height="24"
                 />
               </svg>
-              <span className="relative">The</span>
+              <span className="relative">No more constraints,</span>
             </span>{' '}
-            quick, brown fox jumps over a lazy dog
+            embrace agile digital management
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+          Exhausted from constantly relying on your developer team for every single website or app modification? Experience a new way of managing your online presence.
           </p>
         </div>
   
@@ -106,30 +96,29 @@ function cms() {
 {/* new section */}
 
 
-<div className="py-14 bg-slate-50">
+<div className="py-14 bg-white">
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="relative max-w-2xl mx-auto sm:text-center">
                     <div className="relative z-10">
                         <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                            Let’s help power your SaaS
+                            What feature does our CMS offer?
                         </h3>
                         <p className="mt-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.
-                        </p>
+                        From streamlined order processing and integrated inventory management to detailed customer profiles and secure payment processing, it covers every aspect of your online business.                         </p>
                     </div>
                 </div>
                 <div className="relative mt-12">
                     <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {
                             features.map((item, idx) => (
-                                <li key={idx} className="bg-white space-y-3 p-4 border rounded-lg">
-                                    <div className="text-indigo-600 pb-3">
+                                <li key={idx} className="bg-slate-50 space-y-3 p-4 border rounded-lg">
+                                    <div className="text-green-500 pb-3">
                                         {item.icon}
                                     </div>
-                                    <h4 className="text-lg text-gray-800 font-semibold">
+                                    <h4 className="text-lg text-slate-800 font-semibold">
                                         {item.title}
                                     </h4>
-                                    <p>
+                                    <p className='text-slate-700 text-base'>
                                         {item.desc}
                                     </p>
                                 </li>
@@ -139,6 +128,325 @@ function cms() {
                 </div>
             </div>
         </div>
+
+{/* new section */}
+
+<div className="px-4 py-16 mx-auto bg-slate-50 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="grid gap-5 row-gap-10 lg:grid-cols-2">
+        <div className="flex flex-col justify-center">
+          <div className="max-w-xl mb-6">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            Uncomplicated 
+              <br className="hidden md:block" />
+              Cannabis {' '}
+              <span className="relative px-1">
+                <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
+                <span className="relative inline-block text-deep-purple-accent-400">
+                Order Management!
+                </span>
+              </span>
+            </h2>
+            <p className="text-base text-gray-700 md:text-lg">
+            Here, you can view all incoming orders, seamlessly check in customers, and accommodate walk-up orders with ease. It's your comprehensive command center, facilitating effortless order management and superior customer service.
+            </p>
+          </div>
+          <p className="mb-4 text-sm font-bold tracking-widest uppercase">
+            Features
+          </p>
+          <div className="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
+            <ul className="space-y-3">
+              <li className="flex text-slate-700">
+                <span className="mr-1">
+                  <svg
+                    className="w-5 h-5 mt-px text-deep-purple-accent-400"
+                    stroke="#31B237"
+                    viewBox="0 0 52 52"
+                  >
+                    <polygon
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      fill="none"
+                      points="29 13 14 29 25 29 23 39 38 23 27 23"
+                    />
+                  </svg>
+                </span>
+                Centralized dashboard
+              </li>
+              <li className="flex text-slate-700">
+                <span className="mr-1">
+                  <svg
+                    className="w-5 h-5 mt-px text-deep-purple-accent-400"
+                    stroke="#31B237"
+                    viewBox="0 0 52 52"
+                  >
+                    <polygon
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      fill="none"
+                      points="29 13 14 29 25 29 23 39 38 23 27 23"
+                    />
+                  </svg>
+                </span>
+                Order processing
+              </li>
+              <li className="flex text-slate-700">
+                <span className="mr-1">
+                  <svg
+                    className="w-5 h-5 mt-px text-deep-purple-accent-400"
+                    stroke="#31B237"
+                    viewBox="0 0 52 52"
+                  >
+                    <polygon
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      fill="none"
+                      points="29 13 14 29 25 29 23 39 38 23 27 23"
+                    />
+                  </svg>
+                </span>
+                Customer Management
+              </li>
+            </ul>
+            <ul className="space-y-3">
+              <li className="flex text-slate-700">
+                <span className="mr-1">
+                  <svg
+                    className="w-5 h-5 mt-px text-deep-purple-accent-400"
+                    stroke="#31B237"
+                    viewBox="0 0 52 52"
+                  >
+                    <polygon
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      fill="none"
+                      points="29 13 14 29 25 29 23 39 38 23 27 23"
+                    />
+                  </svg>
+                </span>
+                Inventory Management
+              </li>
+              <li className="flex text-slate-700">
+                <span className="mr-1">
+                  <svg
+                    className="w-5 h-5 mt-px text-deep-purple-accent-400"
+                    stroke="#31B237"
+                    viewBox="0 0 52 52"
+                  >
+                    <polygon
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      fill="none"
+                      points="29 13 14 29 25 29 23 39 38 23 27 23"
+                    />
+                  </svg>
+                </span>
+                Payment Processing
+              </li>
+              <li className="flex text-slate-700">
+                <span className="mr-1">
+                  <svg
+                    className="w-5 h-5 mt-px text-deep-purple-accent-400"
+                    stroke="#31B237"
+                    viewBox="0 0 52 52"
+                  >
+                    <polygon
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      fill="none"
+                      points="29 13 14 29 25 29 23 39 38 23 27 23"
+                    />
+                  </svg>
+                </span>
+                Record keeping
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img
+            className="object-contain w-full h-56 rounded shadow-lg border sm:h-96"
+            src="/cms_orders.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+{/* new section */}
+
+<div className="px-4 bg-white py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+    
+        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <span className="relative inline-block">
+            <svg
+              viewBox="0 0 52 24"
+              fill="#31B237"
+              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+            >
+              <defs>
+                <pattern
+                  id="2feffae2-9edf-414e-ab8c-f0e6396a0fc1"
+                  x="0"
+                  y="0"
+                  width=".135"
+                  height=".30"
+                >
+                  <circle cx="1" cy="1" r=".7" />
+                </pattern>
+              </defs>
+              <rect
+                fill="url(#2feffae2-9edf-414e-ab8c-f0e6396a0fc1)"
+                width="52"
+                height="24"
+              />
+            </svg>
+            <span className="relative">Explore</span>
+          </span>{' '}
+          more features with our CMS
+        </h2>
+        <p className="text-base text-gray-700 md:text-lg">
+        Delve deeper into the multitude of functionalities our Content Management System has to offer. Beyond just managing and organizing your content.
+        </p>
+      </div>
+      <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
+        <div className="grid grid-cols-2 gap-5">
+          <img
+            className="object-contain w-full h-56 col-span-2 rounded shadow-lg"
+            src="/cms_history.png"
+            alt=""
+          />
+          <img
+            className="object-cover w-full h-48 rounded shadow-lg"
+            src="/cms_bulk.png"
+            alt=""
+          />
+          <img
+            className="object-cover w-full h-48 rounded shadow-lg"
+            src="/cms_gift.png"
+            alt=""
+          />
+        </div>
+        <div className="flex flex-col justify-center">
+          <div className="pb-4 mb-4 border-b">
+            <h6 className="mb-2 text-slate-900 font-semibold leading-5">
+              Customer history
+            </h6>
+            <p className="text-sm text-slate-700">
+            You can access detailed records of each customer's purchases, interactions, and engagements with your online store. This not only allows you to provide personalized customer service, but also enables targeted marketing strategies.
+            </p>
+          </div>
+          <div className="pb-4 mb-4 border-b">
+            <h6 className="mb-2 font-semibold text-slate-900 leading-5">
+                Bulk product upload
+            </h6>
+            <p className="text-sm text-slate-700">
+            Convenience and efficiency of bulk product uploading. This feature allows you to add multiple products to your online store simultaneously, saving you valuable time and effort.
+            </p>
+          </div>
+          <div>
+            <h6 className="mb-2 font-semibold text-slate-900 leading-5">
+              Discounts and gift cards
+            </h6>
+            <p className="text-sm text-slate-700">
+            This feature lets you implement a variety of promotional strategies to attract and retain customers. From offering percentage-based discounts on certain products to launching gift card campaigns for special occasions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{/* new section */}
+<div className="px-4 bg-slate-50 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="grid max-w-screen-lg gap-8 row-gap-6 sm:mx-auto lg:grid-cols-2">
+        <a
+          href="/services/ecommerce"
+          aria-label="View item"
+          title="View item"
+          className="relative block p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl"
+        >
+          <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+          <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
+          <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+          <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
+          <div className="relative flex items-center justify-between p-5 bg-white rounded-sm">
+            <div className="pr-4">
+              <h6 className="mb-2 font-semibold leading-5">
+                Our ecommerce features
+              </h6>
+              <p className="text-sm text-gray-900">
+              Immerse yourself in the possibilities with our eCommerce features - designed to power your business success.
+              </p>
+            </div>
+            <div className="flex items-center justify-center">
+              <svg
+                className="w-3 text-gray-700 transition-colors duration-300 group-hover:text-deep-purple-accent-400"
+                fill="currentColor"
+                viewBox="0 0 12 12"
+              >
+                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+              </svg>
+            </div>
+          </div>
+        </a>
+        <a
+          href="/services/pos"
+          aria-label="View item"
+          title="View item"
+          className="relative  block p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl"
+        >
+          <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+          <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
+          <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+          <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
+          <div className="relative flex items-center justify-between p-5 bg-white rounded-sm">
+            <div className="pr-4">
+              <h6 className="mb-2 font-semibold leading-5">
+              Point of sale
+              </h6>
+              <p className="text-sm text-gray-900">
+              Canna (POS) includes, inventory management, customer tracking, sales reporting, and regulatory compliance tools.
+              </p>
+            </div>
+            <div className="flex items-center justify-center">
+              <svg
+                className="w-3 text-gray-700 transition-colors duration-300 group-hover:text-deep-purple-accent-400"
+                fill="currentColor"
+                viewBox="0 0 12 12"
+              >
+                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+{/* new section */}
+
+<section className="py-14 bg-white">
+            <div className="max-w-screen-xl mx-auto px-4  gap-x-12 justify-between md:flex md:px-8">
+                <div className="max-w-xl">
+                    <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                        Ready for a demo?
+                    </h3>
+                    <p className="mt-3 text-gray-600">
+                        Contact us for an expert to demonstrate our cms software and answer any questions you may have.
+                    </p>
+                </div>
+                <div className="flex-none mt-4 md:mt-0">
+                    <a href="/becomeapartner" className="inline-block py-2 px-4 text-white font-medium bg-green-500 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-md hover:shadow-none">
+                        Start now
+                    </a>
+                </div>
+            </div>
+        </section>
 
     </section>
   )

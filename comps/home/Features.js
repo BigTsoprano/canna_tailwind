@@ -50,7 +50,7 @@ export default () => {
 
             title: "Custom software",
             desc: "We understand the unique challenges and opportunities within this fast-growing industry",
-            link: "/services"
+            link: "/services/custom"
         },
         {
             icon:
@@ -63,7 +63,7 @@ export default () => {
                   }}/>,
             title: "Content Management",
             desc: "Digitally Streamlining Your Seed-to-Sale Process for Enhanced Customer Engagement and Elevated Growth.",
-            link: "/services"
+            link: "/services/cms"
         },
         {
             icon:
@@ -76,7 +76,7 @@ export default () => {
                   }}/>,
             title: "IT services",
             desc: "Tailored specifically for the cannabis industry, we provide robust and reliable IT solutions that address your unique needs.",
-            link: "/services"
+            link: "/services/it"
         },
         {
             icon:
@@ -87,9 +87,9 @@ export default () => {
                    
                    
                   }}/>,
-            title: "Data services",
-            desc: " Our data solutions equip you with the knowledge you need to make informed decisions, drive growth, and maximize profitability in the cannabis market.",
-            link: "/services"
+            title: "Point of sale",
+            desc: "Optimized for the unique requirements of the cannabis industry, it ensures efficient transactions and accurate record-keeping.",
+            link: "/services/pos"
         },
     ]
 

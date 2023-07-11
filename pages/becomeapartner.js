@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useFirestore } from "../hooks/useFirestore";
-import styles from "../styles/Join.module.css";
-import { motion } from "framer-motion";
+
 import MuxVideo from "@mux/mux-video-react";
 
 const becomeapartner = () => {
@@ -84,7 +83,7 @@ const becomeapartner = () => {
                 </p>
             </div>
             <form
-                onSubmit={(e) => e.preventDefault()}
+                onSubmit={handleSubmit}
                 className="space-y-5 mt-12 lg:pb-12"
             >
                 <div>
@@ -94,6 +93,8 @@ const becomeapartner = () => {
                     <input
                         type="text"
                         required
+                        onChange={(e) => setFirstName(e.target.value)}
+                        value={firstName}
                         className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                     />
                 </div>
@@ -104,6 +105,8 @@ const becomeapartner = () => {
                     <input
                         type="email"
                         required
+                        onChange={(e) => setBusinessEmail(e.target.value)}
+              value={businessEmail}
                         className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                     />
                 </div>
@@ -115,14 +118,15 @@ const becomeapartner = () => {
                         <div className="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r pr-2">
                             <select className="text-sm bg-transparent outline-none rounded-lg h-full">
                                 <option>US</option>
-                                <option>ES</option>
-                                <option>MR</option>
+                               
                             </select>
                         </div>
                         <input
                             type="number"
                             placeholder="+1 (555) 000-000"
                             required
+                            onChange={(e) => setPhoneNumber(e.target.value)}
+                            value={phoneNumber}
                             className="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                         />
                     </div>
@@ -131,7 +135,7 @@ const becomeapartner = () => {
                     <label className="font-medium">
                         Services
                     </label>
-                    <ul className="grid gap-y-2 gap-x-6 flex-wrap grid-cols-2 mt-3">
+                    {/* <ul className="grid gap-y-2 gap-x-6 flex-wrap grid-cols-2 mt-3">
                         {
                             servicesItems.map((item, idx) => (
                                 <li key={idx} className="flex gap-x-3 text-sm">
@@ -147,13 +151,16 @@ const becomeapartner = () => {
                                 </li>
                             ))
                         }
-                    </ul>
+                    </ul> */}
                 </div>
                 <div>
                     <label className="font-medium">
                         Message
                     </label>
-                    <textarea required className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"></textarea>
+                    <textarea required 
+                      onChange={(e) => setHowCanWeHelp(e.target.value)}
+                      value={howCanWeHelp}
+                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"></textarea>
                 </div>
                 <button
                     className="w-full px-4 py-2 text-white font-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-lg duration-150"
