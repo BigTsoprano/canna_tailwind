@@ -137,7 +137,7 @@ function ServiceLinksTwo() {
             style={{ maxHeight: "400px" }}
             width={800}
             height={500}
-            className="w-auto  h-5/6"
+            className="w-auto rounded shadow-md h-5/6"
             src="/services_pos.png"
             alt="ecommerce"
           />

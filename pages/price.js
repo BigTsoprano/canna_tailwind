@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 
@@ -57,48 +58,47 @@ const features = [
   const plans = [
     {
         name: "Basic plan",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        price: 12,
+        desc: "All the basic ecommerce tools you need to get your online store up and running.",
+        price: 449,
         isMostPop: false,
         features: [
-            "Curabitur faucibus",
-            "massa ut pretium maximus",
-            "Sed posuere nisi",
-            "Pellentesque eu nibh et neque",
-            "Suspendisse a leo",
-            "Praesent quis venenatis ipsum",
-            "Duis non diam vel tortor",
+            "Branding and logo design",
+            "SEO optimized speeds",
+            "Personalized domain",
+            "CMS content management",
+            "ecommerce, pick-up only",
+            "Products page",
+            "Product filter",
+            "Product search",
+            "and more",
 
         ],
     },
     {
-        name: "Startup",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        price: 35,
+        name: "Advanced plan",
+        desc: "Extensive array of sophisticated tools to customize, optimize, and scale your online store. ",
+        price: 649,
         isMostPop: true,
         features: [
-            "Curabitur faucibus",
-            "massa ut pretium maximus",
-            "Sed posuere nisi",
-            "Pellentesque eu nibh et neque",
-            "Suspendisse a leo",
-            "Praesent quis venenatis ipsum",
-            "Duis non diam vel tortor",
+            "Everything from previous plan",
+            "Product reviews",
+            "Optimized site speeds",
+            "Advanced cms",
+            "Online payments",
+            "Advanced filter",
+            "Advanced cart",
+            "and more",
         ],
     },
     {
-        name: "Enterprise",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        price: 60,
+        name: "Custom plan",
+        desc: "Delivering a fully bespoke ecommerce solution tailored to your exact specifications.",
+        price: "xxx",
         isMostPop: false,
         features: [
-            "Curabitur faucibus",
-            "massa ut pretium maximus",
-            "Sed posuere nisi",
-            "Pellentesque eu nibh et neque",
-            "Suspendisse a leo",
-            "Praesent quis venenatis ipsum",
-            "Duis non diam vel tortor",
+            "Free consultation",
+            "Free custom project build",
+           
         ],
     },
 ];
@@ -206,78 +206,26 @@ const features = [
 <div className="px-4 py-16 mx-auto bg-white sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-10 lg:grid-cols-2 ">
         <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
-          <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
-            <svg className="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                points=" 8,5 8,1 16,1 16,5"
-                strokeLinejoin="round"
-              />
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                points="9,15 1,15 1,5 23,5 23,15 15,15"
-                strokeLinejoin="round"
-              />
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                points="22,18 22,23 2,23 2,18"
-                strokeLinejoin="round"
-              />
-              <rect
-                x="9"
-                y="13"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                width="6"
-                height="4"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
+        
           <div className="max-w-xl mb-6">
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-              Let us handle
+              Get a quote
               <br className="hidden md:block" />
-              your next{' '}
+              for your{' '}
               <span className="inline-block text-deep-purple-accent-400">
-                destination
+                next project
               </span>
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
+            We understand that every business is different, and that's why we offer custom software solutions at competitive prices that fit your budget. With our custom software, you're not just buying a product; you're investing in a partnership.
             </p>
           </div>
           <div>
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+          <a
+              href="/becomeaparnter"
+              className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Learn more
-              <svg
-                className="inline-block w-3 ml-2"
-                fill="currentColor"
-                viewBox="0 0 12 12"
-              >
-                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-              </svg>
+              Get started
             </a>
           </div>
         </div>
@@ -285,19 +233,19 @@ const features = [
           <div className="flex flex-col items-end px-3">
             <img
               className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
-              src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="/price_1.png"
               alt=""
             />
             <img
               className="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
-              src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="/price_2.png"
               alt=""
             />
           </div>
           <div className="px-3">
             <img
               className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-              src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+              src="/price_3.png"
               alt=""
             />
           </div>
@@ -311,25 +259,24 @@ const features = [
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className='relative max-w-xl mx-auto sm:text-center'>
                     <h3 className='text-gray-800 text-3xl font-semibold sm:text-4xl'>
-                        Pricing for all sizes
+                        Ecommerce for all sizes
                     </h3>
                     <div className='mt-3 max-w-xl'>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur consequat nunc.
-                        </p>
+                        We offer a range of ecommerce packages, each designed to provide the optimal balance of features, performance, and price.                        </p>
                     </div>
                 </div>
                 <div className='mt-16 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3'>
                     {
                         plans.map((item, idx) => (
-                            <div key={idx} className={`relative flex-1 flex items-stretch flex-col rounded-xl border-2 mt-6 sm:mt-0 ${item.isMostPop ? "mt-10" : ""}`}>
+                            <div key={idx} className={`relative bg-white flex-1 flex items-stretch flex-col rounded-xl border-2 mt-6 sm:mt-0 ${item.isMostPop ? "mt-10" : ""}`}>
                                 {
                                     item.isMostPop ? (
                                         <span class="w-32 absolute -top-5 left-0 right-0 mx-auto px-3 py-2 rounded-full border shadow-md bg-white text-center text-gray-700 text-sm font-semibold">Most popular</span>
                                     ) : ""
                                 }
                                 <div className="p-8 space-y-4 border-b">
-                                    <span className='text-indigo-600 font-medium'>
+                                    <span className='text-green-600 font-medium'>
                                         {item.name}
                                     </span>
                                     <div className='text-gray-800 text-3xl font-semibold'>
@@ -338,9 +285,11 @@ const features = [
                                     <p>
                                         {item.desc}
                                     </p>
-                                    <button className='px-3 py-3 rounded-lg w-full font-semibold text-sm duration-150 text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700'>
+                                    <Link href='/becomeaparnter'>
+                                    <button className='px-3 py-3 rounded-lg w-full font-semibold text-sm duration-150 text-white bg-green-500 hover:bg-indigo-500 active:bg-indigo-700'>
                                         Get Started
                                     </button>
+                                    </Link>
                                 </div>
                                 <ul className='p-8 space-y-3'>
                                     <li className="pb-2 text-gray-800 font-medium">
@@ -374,7 +323,7 @@ const features = [
         {/* new section */}
 
 
-        <div className='relative py-14'>
+        {/* <div className='relative py-14'>
             <div className="max-w-screen-xl mx-auto text-gray-600 md:px-8">
                 <div className='relative max-w-xl space-y-3 px-4 md:px-0'>
                     <h3 className="text-indigo-600 font-semibold">
@@ -453,7 +402,7 @@ const features = [
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
   </section>
   );

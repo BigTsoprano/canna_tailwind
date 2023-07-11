@@ -44,33 +44,33 @@ const Footer = () => {
                     name: 'Ecommerce'
                 },
                 {
-                    href: '/services',
+                    href: '/services/branding',
                     name: 'Branding'
                 },
                 {
-                    href: '/services',
+                    href: '/services/custom',
                     name: 'Custom software'
                 },
                 {
-                    href: '/services',
+                    href: '/services/cms',
                     name: 'CMS'
                 },
                 {
-                    href: '/services',
+                    href: '/services/it',
                     name: 'IT services'
                 },
                 {
-                    href: '/services',
+                    href: '/services/pos',
                     name: 'Pos system'
                 },
-                {
-                    href: '/services',
-                    name: 'MarketplaceB2B'
-                },
-                {
-                    href: '/services',
-                    name: 'Management software'
-                },
+                // {
+                //     href: '/services',
+                //     name: 'MarketplaceB2B'
+                // },
+                // {
+                //     href: '/services',
+                //     name: 'Management software'
+                // },
             ],
         },
         {
@@ -111,9 +111,8 @@ Canna                    </p>
                 </div>
               
               <div> 
-                 <p className="leading-relaxed text-slate-50 max-w-xs mt-2 text-base">
-                 📱: +1(201)328-7539
-                        </p>
+                 
+                 <a className="leading-relaxed text-slate-50 max-w-xs mt-2 text-base" href="tel:+12013287539">📱: +1(201)328-7539</a>
                         <p className="leading-relaxed text-slate-50 max-w-xs mt-2 text-base" >✉️: canna@01ninjas.com</p>
                         </div>
                       

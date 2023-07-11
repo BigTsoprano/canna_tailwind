@@ -432,7 +432,7 @@ ecommerce application
                         </p>
                         <p className="mt-3 text-gray-600">
                         Dive deeper to appreciate how we seamlessly knit together a powerful ecommerce platform with a flexible CMS, creating a unified, high-performing solution for your cannabis business.                        </p>
-                        <a href="javascript:void(0)" className="inline-flex gap-x-1 items-center text-green-600 hover:text-indigo-500 duration-150 font-medium">
+                        <a href="/services/cms" className="inline-flex gap-x-1 items-center text-green-600 hover:text-indigo-500 duration-150 font-medium">
                             Learn more
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                                 <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
@@ -448,7 +448,7 @@ ecommerce application
 <main className="py-9 bg-green-100">
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="max-w-lg mx-auto space-y-3 sm:text-center">
-                    <h3 className="text-indigo-600 font-semibold">
+                    <h3 className="text-green-600 font-semibold">
                         Contact
                     </h3>
                     <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
