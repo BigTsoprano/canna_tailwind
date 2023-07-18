@@ -1,11 +1,16 @@
 import Layout from '@/comps/Layout'
 import '@/styles/globals.css'
 import Script from 'next/script'
+import Head from 'next/head'
+
 
 export default function App({ Component, pageProps }) {
   return (
     <Layout>
-      <Component {...pageProps} />
+  <Head>
+        <title>My page title</title>
+        <meta property="og:title" content="My page title" key="title" />
+      </Head>      <Component {...pageProps} />
       <Script 
       strategy='afterInteractive'
       src="https://www.googletagmanager.com/gtag/js?id=G-MYBLBE82C9" />
