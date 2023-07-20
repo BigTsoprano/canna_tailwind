@@ -9,11 +9,11 @@ function ServicesExit() {
                 Build the future with us
             </p>
             <p className="text-blue-100 mt-3">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.
-            </p>
+            We're passionate about collaborating with industry leaders and innovators.
+      If you have unique software needs or ideas, we can turn them into reality.            </p>
         </div>
         <div className="mt-4">
-            <a href="javascript:void(0)" className="inline-block py-2 px-4 text-gray-800 font-medium bg-white duration-150 hover:bg-gray-100 active:bg-gray-200 rounded-full">
+            <a href="/becomeapartner" className="inline-block py-2 px-4 text-gray-800 font-medium bg-white duration-150 hover:bg-gray-100 active:bg-gray-200 rounded-full">
                 Get started
             </a>
         </div>
