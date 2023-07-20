@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 function Demos() {
   return (
-    <div  className="px-4 bg-slate-50 rounded py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div id="demo"  className="px-4 bg-slate-50 rounded py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
     <div style={{boxShadow: 'rgba(0, 0, 0, 0.08) 0px 2px 4px 0px inset'}} className="flex flex-col bg-white border rounded shadow-sm md:justify-center lg:flex-row">
       <div className="flex flex-col   justify-between p-5 border-b sm:p-10 lg:border-b-0 lg:border-r lg:w-1/2">
         <div>

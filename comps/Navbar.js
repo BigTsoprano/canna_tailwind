@@ -113,14 +113,12 @@ useEffect(() => {
               </a>
             </li>
             <li >
-              <a
-                href="https://demo.01ninjas.com/"
-                aria-label="About us"
-                title="About us"
-                className="text-base font-semibold tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Demo
-              </a>
+              <Link href="/#demo"                 className="text-base font-semibold tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
+>
+             
+                Demos
+              
+              </Link>
             </li>
           </ul>
           <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -215,9 +213,9 @@ useEffect(() => {
                       </li>
                       <li>
                         <a
-                          href="https://demo.01ninjas.com/"
-                          aria-label="About us"
-                          title="About us"
+                          href="/#demo"
+                          aria-label="demos"
+                          title="view demo"
                           className="font-medium inline-flex gap-x-1 items-center tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Demo
@@ -231,7 +229,7 @@ useEffect(() => {
                       <button
                       style={{color:'#000 !important'}}
               href="/becomingapartner"
-              className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded hover:border hover:border-slate-900 bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started
             </button>

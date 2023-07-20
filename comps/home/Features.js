@@ -118,7 +118,7 @@ export default () => {
                                     <h4 className="text-lg text-slate-900 font-semibold">
                                         {item.title}
                                     </h4>
-                                    <p className='text-base text-slate-700'>
+                                    <p className='text-sm text-slate-700'>
                                         {item.desc}
                                     </p>
 

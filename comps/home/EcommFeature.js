@@ -26,8 +26,8 @@ function EcommFeature() {
             Features
           </p>
           <div className="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
-            <ul className="space-y-3 text-black">
-              <li className="flex">
+            <ul className="space-y-3 text-sm text-slate-700">
+              <li className="flex text-sm">
                 <span className="mr-1">
                   <svg
                     className="w-5 h-5 mt-px text-deep-purple-accent-400"
@@ -45,7 +45,7 @@ function EcommFeature() {
                 </span>
                 Product Catalog
               </li>
-              <li className="flex">
+              <li className="flex text-sm">
                 <span className="mr-1">
                   <svg
                     className="w-5 h-5 mt-px text-deep-purple-accent-400"
@@ -63,7 +63,7 @@ function EcommFeature() {
                 </span>
                 Content Management
               </li>
-              <li className="flex">
+              <li className="flex text-sm">
                 <span className="mr-1">
                   <svg
                     className="w-5 h-5 mt-px text-deep-purple-accent-400"
@@ -83,7 +83,7 @@ function EcommFeature() {
               </li>
             </ul>
             <ul className="space-y-3 text-black">
-              <li className="flex">
+              <li className="flex text-sm">
                 <span className="mr-1">
                   <svg
                     className="w-5 h-5 mt-px text-deep-purple-accent-400"
@@ -101,7 +101,7 @@ function EcommFeature() {
                 </span>
                 Order Management
               </li>
-              <li className="flex">
+              <li className="flex text-sm">
                 <span className="mr-1">
                   <svg
                     className="w-5 h-5 mt-px text-deep-purple-accent-400"
@@ -119,7 +119,7 @@ function EcommFeature() {
                 </span>
                 Secure Checkout
               </li>
-              <li className="flex">
+              <li className="flex text-sm">
                 <span className="mr-1">
                   <svg
                     className="w-5 h-5 mt-px text-deep-purple-accent-400"

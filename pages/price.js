@@ -132,12 +132,12 @@ const features = [
             $0 upfront costs for<br className="hidden md:block" />
           any plan of six months or longer
             </h2>
-            <p className="max-w-xl mb-4 text-base text-slate-50 md:text-lg">
+            <p className="max-w-xl mb-4 text-base text-slate-50 md:text-base">
             Experience our state-of-the-art cannabis software solutions without any initial costs when you sign up for a plan of six months or more. We believe in the value of our services and want to make them as accessible as possible. That's why we've designed our pricing structure to allow you to start using our software right away,.
             </p>
             <a
               href="/becomeaparnter"
-              className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started
             </a>
@@ -187,7 +187,7 @@ const features = [
                 <div className="mt-4 mb-2 sm:mb-4">
                 <button
               type="submit"
-              className="rounded-md bg-green-500 px-3.5 py-2.5 inline-flex items-center justify-center w-full h-12 px-6 text-sm font-semibold text-white shadow-sm hover:bg-slate-200 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded bg-green-500 px-3.5 py-2.5 inline-flex items-center justify-center w-full h-12 px-6 text-sm font-semibold text-white shadow-sm hover:bg-slate-200 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Submit
             </button>
@@ -216,14 +216,14 @@ const features = [
                 next project
               </span>
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
+            <p className="text-base text-gray-700 md:text-base">
             We understand that every business is different, and that's why we offer custom software solutions at competitive prices that fit your budget. With our custom software, you're not just buying a product; you're investing in a partnership.
             </p>
           </div>
           <div>
           <a
               href="/becomeaparnter"
-              className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started
             </a>
@@ -280,13 +280,13 @@ const features = [
                                         {item.name}
                                     </span>
                                     <div className='text-gray-800 text-3xl font-semibold'>
-                                        ${item.price} <span className="text-xl text-gray-600 font-normal">/mo</span>
+                                        ${item.price} <span className="text-base text-gray-600 font-normal">/mo</span>
                                     </div>
-                                    <p>
+                                    <p className="text-sm">
                                         {item.desc}
                                     </p>
                                     <Link href='/becomeaparnter'>
-                                    <button className='px-3 py-3 rounded-lg w-full font-semibold text-sm duration-150 text-white bg-green-500 hover:bg-indigo-500 active:bg-indigo-700'>
+                                    <button style={{marginTop:'10px'}} className='px-3 py-3 rounded w-full font-semibold text-sm duration-150 text-white bg-green-500 hover:bg-white hover:border hover:border-slate-900 active:bg-green-500 hover:text-black'>
                                         Get Started
                                     </button>
                                     </Link>
@@ -297,12 +297,12 @@ const features = [
                                     </li>
                                     {
                                         item.features.map((featureItem, idx) => (
-                                            <li key={idx} className='flex items-center gap-5'>
+                                            <li key={idx} className='flex items-center text-sm gap-5'>
                                                 <svg
                                                     xmlns='http://www.w3.org/2000/svg'
                                                     className='h-5 w-5 text-indigo-600'
                                                     viewBox='0 0 20 20'
-                                                    fill='currentColor'>
+                                                    fill='#22c55e'>
                                                     <path
                                                         fill-rule='evenodd'
                                                         d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
@@ -322,8 +322,8 @@ const features = [
 
         {/* new section */}
 
-
-        {/* <div className='relative py-14'>
+{/* 
+        <div className='relative py-14'>
             <div className="max-w-screen-xl mx-auto text-gray-600 md:px-8">
                 <div className='relative max-w-xl space-y-3 px-4 md:px-0'>
                     <h3 className="text-indigo-600 font-semibold">

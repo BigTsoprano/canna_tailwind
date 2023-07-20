@@ -38,10 +38,10 @@ function OtherHome() {
           src="/other_pos.png"
           alt=""
         />
-        <h5 className="mb-2 text-lg font-semibold text-black leading-none sm:text-lg">
+        <h5 className="mb-2 text-base font-semibold text-black leading-none sm:text-lg">
           Point of sale
         </h5>
-        <p className="text-gray-700">
+        <p className="text-gray-700 text-sm">
         We create reliable and adaptable point of sale systems for cannabis retailers. Our system incorporates inherent traceability, sophisticated data reporting, consolidated payment processing, and beyond. 
         </p>
         <a style={{paddingTop:'10px'}}
@@ -64,10 +64,10 @@ function OtherHome() {
           src="/other_b2b.png"
           alt=""
         />
-        <h5 className="mb-2 text-lg font-semibold text-black leading-none sm:text-lg">
+        <h5 className="mb-2 text-base font-semibold text-black leading-none sm:text-lg">
           Marketplace B2B
         </h5>
-        <p className="text-gray-700">
+        <p className="text-gray-700 text-sm">
         A marketplace catered to the B2B for cannabis, is essentially an online platform that enables multiple vendors to showcase and sell their products. Offers a myriad of features tailored to meet the specific needs of cannabis businesses. 
         </p>
         <a style={{paddingTop:'10px'}}
@@ -90,10 +90,10 @@ function OtherHome() {
           src="/other_seed.png"
           alt=""
         />
-        <h5 className="mb-2 text-lg font-semibold text-black leading-none sm:text-lg">
+        <h5 className="mb-2 text-base font-semibold text-black leading-none sm:text-lg">
           Seed to sale
         </h5>
-        <p className="text-gray-700">
+        <p className="text-gray-700 text-sm">
          Seed-to-sale software specifically tailored for the cannabis industry. Innovative software services that cover every aspect of the cannabis business lifecycle, from cultivation and inventory management to compliance tracking and sales analytics. 
         </p>
         <a style={{paddingTop:'10px'}}
@@ -116,10 +116,10 @@ function OtherHome() {
           src="/other_delivery.png"
           alt=""
         />
-        <h5 className="mb-2 text-lg font-semibold text-black leading-none sm:text-lg">
+        <h5 className="mb-2 text-base font-semibold text-black leading-none sm:text-lg">
           Delivery systems
         </h5>
-        <p className="text-gray-700">
+        <p className="text-gray-700 text-sm">
         Specialized software for cannabis delivery. Our software streamlines the entire cannabis delivery process, from online ordering and inventory management to driver tracking and customer communication. 
         </p>
         <a style={{paddingTop:'10px'}}

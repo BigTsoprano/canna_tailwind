@@ -54,13 +54,13 @@ function ecommerce() {
     with Canna Ecommerce.
             </span>
           </h2>
-          <p className="text-base text-gray-700 md:text-lg">
+          <p className="text-base text-gray-700 md:text-base">
           Leverage the power of Canna Ecommerce to reach new heights. Our platform not only expands your reach, attracting more customers, but also enhances your sales process for increased revenues. Transform your business experience with Canna Ecommerce today.
           </p>
         </div>
         <a
               href="#"
-              className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded hover:border hover:border-black bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Contact us
             </a>
@@ -88,10 +88,10 @@ function ecommerce() {
                                     <div className="w-12 h-12 border text-indigo-600 rounded-full flex items-center justify-center">
                                         {item.icon}
                                     </div>
-                                    <h4 className="text-lg text-gray-800 font-semibold">
+                                    <h4 className="text-base text-gray-900 font-semibold">
                                         {item.title}
                                     </h4>
-                                    <p>
+                                    <p className='text-sm text-slate-700'>
                                         {item.desc}
                                     </p>
                                 </li>

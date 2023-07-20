@@ -47,10 +47,10 @@ function ServicesFeatures() {
                             <div className="text-indigo-600 pb-3">
                                 {item.icon}
                             </div>
-                            <h4 className="text-lg text-gray-800 font-semibold">
+                            <h4 className="text-base text-gray-900 font-semibold">
                                 {item.title}
                             </h4>
-                            <p>
+                            <p className='text-sm text-slate-700'>
                                 {item.desc}
                             </p>
                         </li>

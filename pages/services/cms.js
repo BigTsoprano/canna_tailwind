@@ -48,7 +48,7 @@ function cms() {
     ]
   return (
     <section>
-    <div className="flex bg-slate-50 flex-col items-center justify-center px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-32 md:px-0">
+    <div className="flex bg-white flex-col items-center justify-center px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-32 md:px-0">
       <div className="flex flex-col items-center max-w-2xl md:px-8">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
          
@@ -80,7 +80,7 @@ function cms() {
             </span>{' '}
             embrace agile digital management
           </h2>
-          <p className="text-base text-gray-700 md:text-lg">
+          <p className="text-base text-gray-700 md:text-base">
           Exhausted from constantly relying on your developer team for every single website or app modification? Experience a new way of managing your online presence.
           </p>
         </div>
@@ -96,14 +96,14 @@ function cms() {
 {/* new section */}
 
 
-<div className="py-14 bg-white">
+<div className="py-14 bg-slate-50">
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="relative max-w-2xl mx-auto sm:text-center">
                     <div className="relative z-10">
                         <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
                             What feature does our CMS offer?
                         </h3>
-                        <p className="mt-3">
+                        <p className="mt-3 text-base">
                         From streamlined order processing and integrated inventory management to detailed customer profiles and secure payment processing, it covers every aspect of your online business.                         </p>
                     </div>
                 </div>
@@ -111,14 +111,14 @@ function cms() {
                     <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {
                             features.map((item, idx) => (
-                                <li key={idx} className="bg-slate-50 space-y-3 p-4 border rounded-lg">
+                                <li key={idx} className="bg-white space-y-3 p-4 border rounded-lg">
                                     <div className="text-green-500 pb-3">
                                         {item.icon}
                                     </div>
-                                    <h4 className="text-lg text-slate-800 font-semibold">
+                                    <h4 className="text-base text-slate-900 font-semibold">
                                         {item.title}
                                     </h4>
-                                    <p className='text-slate-700 text-base'>
+                                    <p className='text-slate-700 text-sm'>
                                         {item.desc}
                                     </p>
                                 </li>
@@ -131,7 +131,7 @@ function cms() {
 
 {/* new section */}
 
-<div className="px-4 py-16 mx-auto bg-slate-50 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+<div className="px-4 py-16 mx-auto bg-white sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-5 row-gap-10 lg:grid-cols-2">
         <div className="flex flex-col justify-center">
           <div className="max-w-xl mb-6">
@@ -155,7 +155,7 @@ function cms() {
           </p>
           <div className="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
             <ul className="space-y-3">
-              <li className="flex text-slate-700">
+              <li className="flex text-sm text-slate-700">
                 <span className="mr-1">
                   <svg
                     className="w-5 h-5 mt-px text-deep-purple-accent-400"
@@ -173,7 +173,7 @@ function cms() {
                 </span>
                 Centralized dashboard
               </li>
-              <li className="flex text-slate-700">
+              <li className="flex text-sm text-slate-700">
                 <span className="mr-1">
                   <svg
                     className="w-5 h-5 mt-px text-deep-purple-accent-400"
@@ -191,7 +191,7 @@ function cms() {
                 </span>
                 Order processing
               </li>
-              <li className="flex text-slate-700">
+              <li className="flex text-sm text-slate-700">
                 <span className="mr-1">
                   <svg
                     className="w-5 h-5 mt-px text-deep-purple-accent-400"
@@ -211,7 +211,7 @@ function cms() {
               </li>
             </ul>
             <ul className="space-y-3">
-              <li className="flex text-slate-700">
+              <li className="flex text-sm text-slate-700">
                 <span className="mr-1">
                   <svg
                     className="w-5 h-5 mt-px text-deep-purple-accent-400"
@@ -229,7 +229,7 @@ function cms() {
                 </span>
                 Inventory Management
               </li>
-              <li className="flex text-slate-700">
+              <li className="flex text-sm text-slate-700">
                 <span className="mr-1">
                   <svg
                     className="w-5 h-5 mt-px text-deep-purple-accent-400"
@@ -247,7 +247,7 @@ function cms() {
                 </span>
                 Payment Processing
               </li>
-              <li className="flex text-slate-700">
+              <li className="flex text-sm text-slate-700">
                 <span className="mr-1">
                   <svg
                     className="w-5 h-5 mt-px text-deep-purple-accent-400"
@@ -280,7 +280,7 @@ function cms() {
 
 {/* new section */}
 
-<div className="px-4 bg-white py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+<div className="px-4 bg-slate-50 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
     
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
@@ -311,7 +311,7 @@ function cms() {
           </span>{' '}
           more features with our CMS
         </h2>
-        <p className="text-base text-gray-700 md:text-lg">
+        <p className="text-base text-gray-700 md:text-base">
         Delve deeper into the multitude of functionalities our Content Management System has to offer. Beyond just managing and organizing your content.
         </p>
       </div>
@@ -441,7 +441,7 @@ function cms() {
                     </p>
                 </div>
                 <div className="flex-none mt-4 md:mt-0">
-                    <a href="/becomeapartner" className="inline-block py-2 px-4 text-white font-medium bg-green-500 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-md hover:shadow-none">
+                    <a href="/becomeapartner" className="inline-block py-2 px-4 text-white font-medium bg-green-500 duration-150 hover:bg-white hover:text-black active:bg-green-700 rounded hover:border hover:border-black shadow-md hover:shadow-none">
                         Start now
                     </a>
                 </div>

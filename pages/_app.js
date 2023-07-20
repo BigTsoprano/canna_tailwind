@@ -8,8 +8,10 @@ export default function App({ Component, pageProps }) {
   return (
     <Layout>
   <Head>
-        <title>My page title</title>
-        <meta property="og:title" content="My page title" key="title" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+
+        <title>Canna | powered by 01ninjas</title>
+        <meta property="og:title" content="Powered by 01ninjas" key="title" />
       </Head>      <Component {...pageProps} />
       <Script 
       strategy='afterInteractive'

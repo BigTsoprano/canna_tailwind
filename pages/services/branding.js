@@ -18,14 +18,14 @@ function branding() {
               cannabis industry
               </span>
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
+            <p className="text-base text-gray-700 md:text-base">
             Our branding services allows you to craft a unique and memorable brand identity, reflecting your company's values and offerings, thereby attracting your target customers.
             </p>
           </div>
           <div className="flex flex-col items-center md:flex-row">
           <a
               href="#"
-              className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded hover:border hover:border-black bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Contact us
             </a>
@@ -142,13 +142,19 @@ function branding() {
             designed ecommerce platform
             </span>
           </h2>
-          <a
-            href="/"
-            aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-          >
-            Learn more
-          </a>
+          <a 
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    href="/services/ecommerce">
+                  <span style={{color:'#000'}}>Learn more</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                <style jsx>{`
+                .cta-pr-btn:hover svg {
+                    transform: translateX(5px)
+                }
+            `}</style>  
         </div>
         <div className="lg:w-1/2">
           <p className="text-base text-gray-700">

@@ -38,7 +38,7 @@ function custom() {
               we can create
             </span>
           </h2>
-          <p className="pr-5 mb-5 text-base text-slate-700 md:text-lg">
+          <p className="pr-5 mb-5 text-base text-slate-700 md:text-base">
           Ensuring that this code is clean and well-structured safeguards your software's continued value, preventing it from becoming a burden. In today's business environment, this high-quality, clean code is instrumental in propelling success.
 
 
@@ -359,7 +359,7 @@ Security flaws within your code can critically threaten the privacy of your data
               Point of sale
             </h5>
             <div className="relative pr-8">
-              <p className="text-base text-gray-700 md:text-lg">
+              <p className="text-base text-gray-700 md:text-base">
               Canna (POS) includes, inventory management, customer tracking, sales reporting, and regulatory compliance tools to abide by laws and regulations specific to the cannabis industry.
               </p>
             </div>
@@ -386,7 +386,7 @@ Security flaws within your code can critically threaten the privacy of your data
               Marketplace B2B
             </h5>
             <div className="relative pr-8">
-              <p className="text-base text-gray-700 md:text-lg">
+              <p className="text-base text-gray-700 md:text-base">
              Our marketplace platform enables cannabis growers, processors, and dispensaries to connect, compare, and transact with each other efficiently
               </p>
             </div>
@@ -413,7 +413,7 @@ Security flaws within your code can critically threaten the privacy of your data
               Seed to sale
             </h5>
             <div className="relative pr-8">
-              <p className="text-base text-gray-700 md:text-lg">
+              <p className="text-base text-gray-700 md:text-base">
             Software that allows businesses to monitor and manage every step of their operation, from cultivation (the 'seed' stage) to the final sale of the product to consumers.
               </p>
             </div>

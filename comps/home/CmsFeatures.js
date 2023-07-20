@@ -40,10 +40,10 @@ function CmsFeatures() {
                                     {item.icon}
                                 </div>
                                 <div>
-                                    <h4 className="text-lg text-gray-800 font-semibold">
+                                    <h4 className="text-base text-gray-800 font-semibold">
                                         {item.title}
                                     </h4>
-                                    <p className="mt-3">
+                                    <p className="mt-3 text-sm">
                                         {item.desc}
                                     </p>
                                 </div>
