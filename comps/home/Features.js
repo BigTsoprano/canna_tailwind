@@ -4,7 +4,7 @@ import TuneOutlinedIcon from '@mui/icons-material/TuneOutlined';
 import VideoSettingsOutlinedIcon from '@mui/icons-material/VideoSettingsOutlined';
 import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
 import StorageOutlinedIcon from '@mui/icons-material/StorageOutlined';
-
+import {motion} from 'framer-motion'
 
 export default () => {
 
@@ -94,7 +94,7 @@ export default () => {
     ]
 
     return (
-        <section style={{paddingBottom:'160px'}} className="py-20 bg-slate-50">
+        <section style={{paddingBottom:'6rem'}} className="py-20 bg-slate-50 ">
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="relative max-w-2xl mx-auto sm:text-center">
                     <div className="relative z-10">
@@ -111,11 +111,11 @@ export default () => {
                     <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {
                             features.map((item, idx) => (
-                                <li key={idx} className="bg-white space-y-3 p-4 border rounded-lg hover:drop-shadow-md hover:bg-green-100 transition duration-100 delay-50 hover:delay-100">
-                                    <div className="text-indigo-600 pb-3">
+                                <motion.li whileHover={{scale:1.05}} transition={{type:'spring', stiffness: 200}} key={idx} className="bg-white space-y-3 p-4 border rounded hover:border-black hover:shadow-md hover:bg-green-100 transition duration-100 delay-50 hover:delay-100">
+                                    <div className="text-green-500">
                                         {item.icon}
                                     </div>
-                                    <h4 className="text-lg text-slate-900 font-semibold">
+                                    <h4 className="text-base text-slate-900 font-semibold">
                                         {item.title}
                                     </h4>
                                     <p className='text-sm text-slate-700'>
@@ -125,7 +125,7 @@ export default () => {
                                     <a 
                     className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
                     href={item.link}>
-                  <span className='text-base text-slate-900'>Learn more</span>  
+                  <span className='text-sm text-slate-900'>Learn more</span>  
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
@@ -135,7 +135,7 @@ export default () => {
                     transform: translateX(5px)
                 }
             `}</style>
-                                </li>
+                                </motion.li>
                             ))
                         }
                     </ul>

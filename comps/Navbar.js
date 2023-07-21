@@ -4,7 +4,7 @@ import Slide from "@mui/material/Slide";
 import { useState, useEffect } from "react";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import MenuIcon from "@mui/icons-material/Menu";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion} from "framer-motion";
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Image from "next/image";
@@ -65,7 +65,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div>
+    <div className="">
       <HideOnScroll>
       <div className={navbar ? 'navbar active' : 'navbar'}>
       <div style={{width:'100%'}} className="px-4 flex items-center justify-between py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -76,60 +76,56 @@ useEffect(() => {
             className="inline-flex items-center"
             style={{letterSpacing:'normal !important'}}
           >
-            <Image src="/ninjas_logo.svg" width={30} height={30} />
             <span className="ml-2 text-xl text-green-500 font-bold tracking-wide text-gray-100 ">
               Canna
             </span>
           </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
-            <li > 
+            <motion.li  whileHover={{ scale: 1.1 }}> 
               <a
+             
                 href="/services"
                 aria-label="Our product"
                 title="Our product"
-                className="text-base font-semibold tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
+                className="text-sm font-semibold tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Services
               </a>
-            </li>
-            <li >
+            </motion.li>
+            <motion.li  whileHover={{ scale: 1.1 }}> 
               <a
                 href="/about"
                 aria-label="Our product"
                 title="Our product"
-                className="text-base font-semibold tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
+                className="text-sm font-semibold tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
               >
                 About us
               </a>
-            </li>
-            <li >
+              </motion.li>
+            <motion.li  whileHover={{ scale: 1.1 }}> 
               <a
                 href="/price"
                 aria-label="Product pricing"
                 title="Product pricing"
-                className="text-base font-semibold tracking-wide text-slate-50 transition-colors duration-200 hover:text-teal-accent-400"
+                className="text-sm font-semibold tracking-wide text-slate-50 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Pricing
               </a>
-            </li>
-            <li >
-              <Link href="/#demo"                 className="text-base font-semibold tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
+              </motion.li>
+            <motion.li  whileHover={{ scale: 1.1 }}  transition={{ type: "spring", }}> 
+              <Link href="/#demo"                 className="text-sm font-semibold tracking-wide text-slate-50  transition-colors duration-200 hover:text-teal-accent-400"
 >
              
                 Demos
               
               </Link>
-            </li>
+              </motion.li>
           </ul>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
-              <Link href="/becomeapartner">
-            <button
-              className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Get started
-            </button>
-            </Link>
+            <Link href="/becomeapartner">
+          <motion.div  style={{padding:'10px 16px', margin:'1px'}} className="group [transform:translateZ(0)]  rounded hover:border hover:border-black overflow-hidden bg-green-500 relative before:absolute before:bg-white before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:text-black hover:text-black before:duration-500"><span className="relative z-0 text-white group-hover:text-black transition font-semibold text-sm ease-in-out duration-500">Contact us</span></motion.div>
+          </Link>
             </li>
           </ul>
           <div className="lg:hidden">
@@ -225,15 +221,14 @@ useEffect(() => {
                         </a>
                       </li>
                       <li>
-                        <Link href="/becomeapartner">
-                      <button
-                      style={{color:'#000 !important'}}
+                       <a
+                     
               href="/becomingapartner"
-              className="rounded hover:border hover:border-slate-900 bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded hover:border hover:border-slate-900 bg-green-500 px-3.5 py-2.5 text-base font-semibold text-black shadow-sm hover:bg-white hover:text-black"
             >
               Get started
-            </button>
-            </Link>
+            </a>
+            
                       </li>
                     </ul>
                   </nav>

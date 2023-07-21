@@ -7,6 +7,7 @@ import CmsFeatures from "@/comps/home/CmsFeatures";
 import ExitBanner from "@/comps/home/ExitBanner";
 import OtherHome from "@/comps/home/OtherHome";
 import Demos from "@/comps/home/Demos";
+import DemoBanner from "@/comps/home/DemoBanner";
 
 
 
@@ -16,7 +17,7 @@ export default function Home() {
   return (
    <section>
     <Hero/>
-
+    <DemoBanner/>
     <Features/>
     <EcommFeature/>
     <Compliance/>

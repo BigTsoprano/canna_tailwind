@@ -18,7 +18,7 @@ function EcommFeature() {
                 </span>
               </span>
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
+            <p className="text-base text-slate-800 md:text-base">
             At Canna we offer an all-in-one e-commerce platform, designed to help your business thrive in the online marketplace. With our comprehensive suite of features, you'll be able to create, customize, and grow your online dispensary with ease.
             </p>
           </div>
@@ -139,7 +139,7 @@ function EcommFeature() {
               </li>
             </ul>
             <a style={{marginTop:'20px'}}
-                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium text-sm  rounded-full inline-flex items-center"
                     href="/services/ecommerce">
                   <span style={{color:'#000'}}>Learn more</span>  
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -156,9 +156,9 @@ function EcommFeature() {
       
          
           <MuxVideo
-          className='object-cover w-full h-auto rounded  sm:h-auto'
+          className='object-cover w-full h-auto rounded hover:shadow-lg shadow-md transition duration-100 delay-50 hover:delay-100 sm:h-auto'
    style={{
-    boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+    
     
       objectFit:'contain',
    

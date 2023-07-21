@@ -48,9 +48,9 @@ function Demos() {
         <Link href="https://demo.01ninjas.com">
           <button
             type="submit"
-            className="rounded-md hover:border-2 hover:border-4-black bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white w hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-60"
+            className="rounded hover:border-black hover:border hover:border-4-black bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white w-full hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-60"
           >
-            View demo
+            Explore demo
           </button>
           </Link>
       </div>
@@ -96,9 +96,9 @@ function Demos() {
         <Link href="https://cart.01ninjas.com">
         <button
             type="submit"
-            className="rounded-md hover:border-2 hover:border-4-black bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white w hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-60"
+            className="rounded hover:border-black hover:border hover:border-4-black bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white w-full hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-60"
           >
-            View demo
+            Explore demo
           </button>
        </Link>
       </div>
