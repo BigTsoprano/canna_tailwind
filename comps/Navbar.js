@@ -20,7 +20,11 @@ function HideOnScroll({ children }) {
     </Slide>
   );
 }
-
+const variants = {
+  open: { opacity: 1, y: 0 },
+  closed: { opacity: 0, y: "-100%" },
+  transition: { type: "spring", duration: 0.5, ease: "easeInOut", stiffness: 300 }, 
+}
 const Navbar = () => {
   // const [clientWindowHeight, setClientWindowHeight] = useState("");
   // const [isScrolled, setIsScrolled] = useState(false);
@@ -63,6 +67,9 @@ const changeBackground = () => {
 useEffect(() => {
   window.addEventListener("scroll", changeBackground);
 }, []);
+
+const [isOpen, setIsOpen] = useState(false)
+
 
   return (
     <div className="">
@@ -133,7 +140,7 @@ useEffect(() => {
               aria-label="Open Menu"
               title="Open Menu"
               className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
-              onClick={() => setIsMenuOpen(true)}
+              onClick={() => setIsOpen(isOpen => !isOpen)}
             >
              <svg className="w-6 h-6" viewBox="0 0 24 24" aria-hidden="true">
   <path fill="#2251CC" d="M0 2 H6 V6 H0 Z"></path>
@@ -144,9 +151,11 @@ useEffect(() => {
   <path fill="#E12D39" d="M9 16 H24 V20 H6 Z"></path>
 </svg>
             </button>
-            {isMenuOpen && (
-              <div style={{zIndex:'999'}}className="absolute top-0 left-0 w-full">
-                <div className="p-5  bg-slate-100 border rounded shadow-sm">
+           
+              <motion.nav
+      animate={isOpen ? "open" : "closed"}
+      variants={variants} style={{zIndex:'999'}}className="absolute top-0 left-0 w-full">
+                <div className="p-5  bg-white border-b border-black  shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                   
                     <div>
@@ -154,7 +163,7 @@ useEffect(() => {
                         aria-label="Close Menu"
                         title="Close Menu"
                         className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        onClick={() => setIsMenuOpen(false)}
+                        onClick={() => setIsOpen(isOpen => !isOpen)}
                       >
                         <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
                           <path
@@ -224,7 +233,7 @@ useEffect(() => {
                        <a
                      
               href="/becomingapartner"
-              className="rounded hover:border hover:border-slate-900 bg-green-500 px-3.5 py-2.5 text-base font-semibold text-black shadow-sm hover:bg-white hover:text-black"
+              className="rounded hover:border hover:border-slate-900 bg-slate-900 px-3.5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-white hover:text-black"
             >
               Get started
             </a>
@@ -233,8 +242,8 @@ useEffect(() => {
                     </ul>
                   </nav>
                 </div>
-              </div>
-            )}
+              </motion.nav>
+           
           </div>
       
       </div>

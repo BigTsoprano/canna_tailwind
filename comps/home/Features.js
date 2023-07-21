@@ -94,7 +94,7 @@ export default () => {
     ]
 
     return (
-        <section style={{paddingBottom:'6rem'}} className="py-20 bg-slate-50 ">
+        <section style={{paddingBottom:'6rem'}} className="py-20 bg-slate-100 ">
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="relative max-w-2xl mx-auto sm:text-center">
                     <div className="relative z-10">
@@ -111,7 +111,7 @@ export default () => {
                     <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {
                             features.map((item, idx) => (
-                                <motion.li whileHover={{scale:1.05}} transition={{type:'spring', stiffness: 200}} key={idx} className="bg-white space-y-3 p-4 border rounded hover:border-black hover:shadow-md hover:bg-green-100 transition duration-100 delay-50 hover:delay-100">
+                                <motion.li whileHover={{scale:1.05}} transition={{type:'spring'}} key={idx} className="bg-white space-y-3 p-4 border rounded hover:border-black hover:shadow-md hover:bg-green-100 transition   hover:delay-20">
                                     <div className="text-green-500">
                                         {item.icon}
                                     </div>
@@ -125,7 +125,7 @@ export default () => {
                                     <a 
                     className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
                     href={item.link}>
-                  <span className='text-sm text-slate-900'>Learn more</span>  
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm text-slate-900'>Learn more</span>  
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>

@@ -5,105 +5,106 @@ import Image from 'next/image';
 
 function Demos() {
   return (
-    <div id="demo"  className="px-4 bg-slate-50 rounded py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-    <div style={{boxShadow: 'rgba(0, 0, 0, 0.08) 0px 2px 4px 0px inset'}} className="flex flex-col bg-white border rounded shadow-sm md:justify-center lg:flex-row">
-      <div className="flex flex-col   justify-between p-5 border-b sm:p-10 lg:border-b-0 lg:border-r lg:w-1/2">
-        <div>
+    <div id="demo" className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+     
+        <div style={{paddingBottom:'20px'}} className="flex flex-col lg:flex-row">
+          <div className="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
+            <h2 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            Ecommerce starter and 
+              <br className="hidden md:block" />
+              advanced{' '}
+              <span className="inline-block text-deep-purple-accent-400">
+              filtering live!
+              </span>
+            </h2>
+          </div>
+          <div className="lg:w-1/2">
+            <p className="mb-4 text-base text-gray-700">
+            Join us today and unlock the potential of your cannabis business with our ecommerce demos. Empower your growth, captivate your audience, and revolutionize the way you sell cannabis products online.
 
-        <MuxVideo
-    className='mux_video'
+            </p>
+       
+          </div>
+        </div>
+      <div className="grid max-w-screen-lg gap-8 row-gap-5 md:row-gap-8 sm:mx-auto lg:grid-cols-2">
+      
+      <div
+  className="relative overflow-hidden rounded aspect-square shadow-sm transition hover:shadow-lg"
+>
+
+<MuxVideo
+       className="absolute inset-0 h-full w-full object-cover"
+
    style={{
-    backgroundColor:'#000',
-      //borderRadius: '6px',
-     height:'auto',
-     width:'auto',
-      objectFit:'contain',
-      zIndex: '0',
-    //   border:'1px solid #292929',
+    // backgroundColor:'#000',
+    //  borderRadius: '0',
+    //  height:'90vh',
+    //  width:'100%',
+    //   objectFit:'cover',
+    //   zIndex: '0',
     //   position:'absolute'
-    // boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset'
     
    }}
-   playbackId="QMPOEHO2sE02ctBk638ki02KmQQCpKxDIeUytL2gdzOfA"
+   playbackId="tjSAUphZZeQXxYk1pervCudL4mWeztQFLim02vyKxs8I"
    metadata={{
-     video_id: "video-id-123456",
-     video_title: "Super Interesting Video",
-     viewer_user_id: "user-id-bc-789",
+     video_id: "video-id-12345612",
+     video_title: "hero video",
+     viewer_user_id: "user-id-bc-789223",
    }}
    streamType="on-demand"
-   autoPlay
    playsInline
+   autoPlay
    muted
    loop
  ></MuxVideo>
-          <h5 style={{paddingTop:'25px'}} className="max-w-md mb-6 text-3xl font-extrabold text-black leading-none sm:text-4xl">
-            Our basic package  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#18981D] to-[#51CA58]">ecommerce store demo</span>
-          </h5>
-          {/* <p className="mb-6 text-base text-gray-700 md:text-lg sm:mb-8">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae. explicabo.
-          </p> */}
-        </div>
-        <Link href="https://demo.01ninjas.com">
-          <button
-            type="submit"
-            className="rounded hover:border-black hover:border hover:border-4-black bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white w-full hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-60"
-          >
-            Explore demo
-          </button>
-          </Link>
-      </div>
-      <div className="flex flex-col  justify-between p-5 sm:p-10 lg:w-1/2">
-        <div >
+  <div
+    className="relative h-full bg-gradient-to-t from-slate-900/50 to-slate-900/40 pt-32 sm:pt-48 lg:pt-64"
+  >
+<Link href="https://demo.01ninjas.com">
+    <button style={{position:'absolute', bottom:'0', padding:'10px 16px'}} className="group [transform:translateZ(0)] px-6 py-3  bg-green-500 text-white w-full overflow-hidden relative before:absolute before:bg-white before:border before:border-black before:bottom-0 before:left-0 before:h-full before:w-full before:-translate-x-full hover:before:translate-x-0 before:transition before:ease-in-out before:duration-500"><span className="relative z-0 font-semibold text-white hover:text-black group-hover:text-black transition ease-in-out duration-500">View starter demo</span></button>
+    </Link>
+  </div>
+</div>
+<div
+  className="relative overflow-hidden rounded aspect-square shadow-sm transition hover:shadow-lg"
+>
 
-        <MuxVideo
-    className='mux_video'
+<MuxVideo
+       className="absolute inset-0 h-full w-full object-cover"
+
    style={{
-    backgroundColor:'#000',
-      //borderRadius: '6px',
-     height:'auto',
-     width:'auto',
-      objectFit:'contain',
-      zIndex: '0',
-    //   border:'1px solid #292929',
+    // backgroundColor:'#000',
+    //  borderRadius: '0',
+    //  height:'90vh',
+    //  width:'100%',
+    //   objectFit:'cover',
+    //   zIndex: '0',
     //   position:'absolute'
-    // boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset'
     
    }}
-   playbackId="702TZinIQSs6pnqeHDnq98QLn4u41OVjXCxzO5dncBL00"
+   playbackId="00Qq8VN028K8L00Tg4PD3wPxMJuDZkhoq01jul2oqgq52gk"
    metadata={{
-     video_id: "video-id-123456",
-     video_title: "Super Interesting Video",
-     viewer_user_id: "user-id-bc-789",
+     video_id: "video-id-12345612",
+     video_title: "hero video",
+     viewer_user_id: "user-id-bc-789223",
    }}
    streamType="on-demand"
-   autoPlay
    playsInline
+   autoPlay
    muted
    loop
  ></MuxVideo>
+  <div
+    className="relative h-full bg-gradient-to-t from-slate-900/50 to-slate-900/40 pt-32 sm:pt-48 lg:pt-64"
+  >
 
-          <h5 style={{paddingTop:'25px'}} className="max-w-md mb-6 text-3xl text-black font-extrabold leading-none sm:text-4xl">
-            Our advanced cart<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#18981D] to-[#51CA58]"> ecommerce store demo</span>
-          </h5>
-          {/* <p className="mb-6 text-base text-gray-700 md:text-lg sm:mb-8">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae. explicabo.
-          </p> */}
-        </div>
-        <Link href="https://cart.01ninjas.com">
-        <button
-            type="submit"
-            className="rounded hover:border-black hover:border hover:border-4-black bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white w-full hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-60"
-          >
-            Explore demo
-          </button>
-       </Link>
+<Link href="https://cart.01ninjas.com">
+    <button style={{position:'absolute', bottom:'0', padding:'10px 16px'}} className="group [transform:translateZ(0)] px-6 py-3  bg-green-500 text-white w-full overflow-hidden relative before:absolute before:bg-white before:border before:border-black before:bottom-0 before:left-0 before:h-full before:w-full before:-translate-x-full hover:before:translate-x-0 before:transition before:ease-in-out before:duration-500"><span className="relative z-0 font-semibold text-white hover:text-black group-hover:text-black transition ease-in-out duration-500">View cart demo</span></button>
+    </Link>
+  </div>
+</div>
       </div>
     </div>
-  </div>
   )
 }
 

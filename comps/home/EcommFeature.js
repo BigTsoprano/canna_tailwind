@@ -141,7 +141,7 @@ function EcommFeature() {
             <a style={{marginTop:'20px'}}
                     className="cta-pr-btn  bg-transparent text-green-500 font-medium text-sm  rounded-full inline-flex items-center"
                     href="/services/ecommerce">
-                  <span style={{color:'#000'}}>Learn more</span>  
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm' style={{color:'#000'}}>Learn more</span>  
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>

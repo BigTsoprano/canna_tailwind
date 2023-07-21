@@ -17,7 +17,7 @@ function OtherHome() {
     //   We bring together deep industry expertise and the latest software advancements to develop reliable, scalable and secure software solutions for all of your cannabis project ideas.
     //   </p>
     // </div>
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 py-16 mx-auto bg-slate-100 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl mb-6 sm:mx-auto items-center flex-col sm:text-center md:mb-10 lg:max-w-2xl">
         <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight  md:mb-2">
         <span className="inline-block mb-1 sm:mb-4">
@@ -47,7 +47,7 @@ function OtherHome() {
         <a style={{paddingTop:'10px'}}
                     className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
                     href='/services/pos'>
-                  <span style={{color:'#000'}}>Learn more</span>  
+                  <span className='text-sm relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300' style={{color:'#000'}}>Learn more</span>  
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
@@ -73,7 +73,7 @@ function OtherHome() {
         <a style={{paddingTop:'10px'}}
                     className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
                     href='/price'>
-                  <span style={{color:'#000'}}>Learn more</span>  
+                  <span className='text-sm relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300' style={{color:'#000'}}>Learn more</span>  
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
@@ -99,7 +99,7 @@ function OtherHome() {
         <a style={{paddingTop:'10px'}}
                     className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
                     href='/price'>
-                  <span style={{color:'#000'}}>Learn more</span>  
+                  <span className='text-sm relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300' style={{color:'#000'}}>Learn more</span>  
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
@@ -125,7 +125,7 @@ function OtherHome() {
         <a style={{paddingTop:'10px'}}
                     className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
                     href='/price'>
-                  <span style={{color:'#000'}}>Learn more</span>  
+                  <span className='text-sm relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300' style={{color:'#000'}}>Learn more</span>  
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>

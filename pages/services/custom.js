@@ -11,7 +11,7 @@ import Image from 'next/image';
 function custom() {
   return (
     <section>
-      <div className="relative bg-slate-50 flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
+      <div className="relative bg-slate-100 flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
       <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         <svg
           className="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
@@ -61,7 +61,7 @@ function custom() {
 
 {/* new section */}
 
-<div className="px-4 bg-slate-50 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+<div className="px-4 bg-slate-100 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
         <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
           <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
@@ -180,7 +180,7 @@ function custom() {
 
     {/* new section */}
 
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 py-16 bg-slate-100 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
         <div className="relative lg:w-1/2">
           <Image width={500} height={500}
@@ -212,7 +212,7 @@ Security flaws within your code can critically threaten the privacy of your data
 
     {/* new section */}
 
-    <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="relative px-4 py-16 bg-slate-100 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="absolute inset-0">
         <div className="absolute inset-y-0 z-0 w-full h-full bg-white border rounded lg:w-3/4" />
       </div>
@@ -351,9 +351,9 @@ Security flaws within your code can critically threaten the privacy of your data
 
         {/* new section */}
 
-        <div className="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="px-4 py-10 bg-slate-100 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-screen-lg sm:mx-auto">
-        <div className="flex bg-white border rounded  flex-col items-start py-4 transition duration-300 transform rounded sm:px-4 lg:flex-row sm:hover:translate-x-4 sm:hover:bg-blue-gray-50">
+        <div className="flex bg-white border rounded  flex-col items-start py-4 transition duration-300 transform rounded sm:px-4 lg:flex-row sm:hover:translate-x-4 sm:hover:bg-blue-slate-100">
           <div className="mb-4  lg:mb-0">
             <h5 className="mb-4 font-sans text-3xl font-bold tracking-tight text-slate-900 leading-none sm:text-2xl">
               Point of sale
