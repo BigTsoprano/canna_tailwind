@@ -28,6 +28,7 @@ export default function App({ Component, pageProps }) {
         `}
 
       </Script>
+      <Script src="./node_modules/preline/dist/preline.js"></Script>
 
       
 

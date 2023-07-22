@@ -8,6 +8,7 @@ import ExitBanner from "@/comps/home/ExitBanner";
 import OtherHome from "@/comps/home/OtherHome";
 import Demos from "@/comps/home/Demos";
 import DemoBanner from "@/comps/home/DemoBanner";
+import HomeComp from "@/comps/home/HomeComp";
 
 
 
@@ -20,7 +21,8 @@ export default function Home() {
     <DemoBanner/>
     <Features/>
     <EcommFeature/>
-    <Compliance/>
+    <HomeComp/>
+    
     <CmsFeatures/>
     <OtherHome/>
     <Banner/>

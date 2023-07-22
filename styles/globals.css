@@ -108,6 +108,9 @@ transition: all 0.3s ease-in-out .5s;
 
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 
 .hero_backdrop{
    background: rgba(0,0,0,.65);
