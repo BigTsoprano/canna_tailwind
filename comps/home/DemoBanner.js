@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function DemoBanner() {
   return (
     <section className="px-0 py-12 bg-slate-100 mx-auto max-w-7xl sm:px-4">
-    <div style={{margin:'0 1rem'}} className="grid items-center mx-auto grid-cols-1 gap-10 px-8 py-6 overflow-hidden bg-green-100  rounded card card-body sm:rounded md:px-8 md:grid-cols-5 hover:drop-shadow-md drop-shadow-sm transition duration-100 delay-50 hover:delay-100 lg:gap-0">
+    <div style={{margin:'0 1rem',boxShadow: 'rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px'}} className="demo_banner grid items-center mx-auto grid-cols-1 gap-10 px-8 py-6 overflow-hidden bg-green-100  rounded card card-body sm:rounded md:px-8 md:grid-cols-5  transition duration-100 delay-50 hover:delay-100 lg:gap-0">
       <div className="col-span-1 md:col-span-3">
         <h2 className="mb-3 text-slate-900 text-3xl font-sans text-3xl font-bold  sm:text-4xl">Journey Through Our Interactive Cannabis Site Demos</h2>
         <p className="mb-6 text-sm font-base text-slate-800 font-sans lg:text-base">Our interactive demos, offer a vivid representation of the capabilities and potential of our ecommerce solution with a wide array of features, including an intuitive user interface, advanced filtering cart system, seamless checkout process, and robust security measures.  </p>

@@ -19,7 +19,7 @@ function OtherHome() {
     // </div>
     <div className="px-4 py-16 mx-auto bg-slate-100 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl mb-6 sm:mx-auto items-center flex-col sm:text-center md:mb-10 lg:max-w-2xl">
-        <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight  md:mb-2">
+        <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight sm:text-4xl  md:mb-2">
         <span className="inline-block mb-1 sm:mb-4">
          Custom solutions that 
            <br className="hidden md:block" />

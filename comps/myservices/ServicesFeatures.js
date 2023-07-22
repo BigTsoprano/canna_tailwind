@@ -2,6 +2,8 @@ import React from 'react'
 import HubOutlinedIcon from '@mui/icons-material/HubOutlined';
 import AddBusinessOutlinedIcon from '@mui/icons-material/AddBusinessOutlined';
 import TuneOutlinedIcon from '@mui/icons-material/TuneOutlined';
+import {motion} from 'framer-motion';
+
 
 function ServicesFeatures() {
 
@@ -27,11 +29,11 @@ function ServicesFeatures() {
     ]
 
   return (
-    <section className="py-14 bg-slate-50">
+    <section className="py-14 bg-slate-100">
     <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="relative max-w-2xl mx-auto sm:text-center">
             <div className="relative z-10">
-                <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                <h3 className="text-gray-800 font-sans text-3xl font-bold tracking-tight sm:text-4xl">
                 Perfect blend of innovation and functionality.
                 </h3>
                 <p className="mt-3">
@@ -43,8 +45,8 @@ function ServicesFeatures() {
             <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 ">
                 {
                     features.map((item, idx) => (
-                        <li key={idx} className="bg-white space-y-3 p-4 border rounded-lg hover:drop-shadow-md hover:bg-green-100 transition duration-100 delay-50 hover:delay-100">
-                            <div className="text-indigo-600 pb-3">
+                        <motion.li whileHover={{scale:1.05}} transition={{type:'spring'}} key={idx} className="bg-white space-y-3 p-4 border rounded hover:border-black hover:shadow-md hover:bg-green-100 transition   hover:delay-20">                        
+                            <div className="text-green-500">
                                 {item.icon}
                             </div>
                             <h4 className="text-base text-gray-900 font-semibold">
@@ -53,7 +55,7 @@ function ServicesFeatures() {
                             <p className='text-sm text-slate-700'>
                                 {item.desc}
                             </p>
-                        </li>
+                        </motion.li>
                     ))
                 }
             </ul>

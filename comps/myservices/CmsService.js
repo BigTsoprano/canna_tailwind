@@ -3,13 +3,11 @@ import Image from 'next/image'
 
 function CmsService() {
   return (
-    <div className="px-4 py-16 bg-slate-50 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 py-16 bg-slate-100 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
     <div className="mx-auto sm:text-center lg:max-w-2xl">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <div>
-       
-        </div>
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+  
+        <h2 className="max-w-lg mb-6 fofont-sans text-3xl font-bold tracking-tight  text-gray-900 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -37,14 +35,14 @@ function CmsService() {
           </span>{' '}
           content management system (cms)
         </h2>
-        <p className="text-base text-gray-700 md:text-lg">
+        <p className="text-base text-gray-700 md:text-base">
         CMS software is designed to be user-friendly, with an intuitive
               interface that makes it easy for non-technical users to create and
               manage content.
         </p>
       </div>
       <div className="mb-4 transition-shadow duration-300 hover:shadow-xl lg:mb-6">
-      <Image width={800} height={800}
+      <Image width={1000} height={800}
           className="object-cover w-full h-56 rounded shadow-lg sm:h-64 md:h-80 lg:h-96"
           src="/cms_img.png"
           alt=""
@@ -57,8 +55,8 @@ function CmsService() {
       </p>
       <a 
                     className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
-                    href="/services/cms">
-                  <span style={{color:'#000'}}>Learn more</span>  
+                    href='/services/cms'>
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-base font-sans text-slate-900'>Learn more</span>  
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
@@ -67,7 +65,7 @@ function CmsService() {
                 .cta-pr-btn:hover svg {
                     transform: translateX(5px)
                 }
-            `}</style>
+            `}</style> 
     </div>
   </div>
   )

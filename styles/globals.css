@@ -31,7 +31,7 @@ a {
    text-decoration: none;
    font-size: 1em;
    font-weight: 400;
-   z-index: 999;
+   z-index: 98;
    font-family: 'Open Sans', sans-serif;
 }
 p{
@@ -80,6 +80,16 @@ h3{
   display: none;
 }
 
+.demo_banner{
+
+}
+.demo_banner:hover{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important;
+
+transition: all 0.3s ease-in-out .5s;
+
+
+}
 
 @media screen and (max-device-width: 640px) {
    h2{
@@ -153,3 +163,4 @@ border-bottom: 1px solid #292929;
  .mux_video:hover{
   box-shadow: none !important;
  }
+ 

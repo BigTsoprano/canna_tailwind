@@ -6,7 +6,7 @@ function ServiceHeader() {
     <div className="absolute inset-x-0 bottom-0">
       <svg
         viewBox="0 0 224 12"
-        fill="#F8FAFC"
+        fill="#F1F5F9"
         className="w-full -mb-1 text-white"
         preserveAspectRatio="none"
       >
@@ -24,15 +24,14 @@ function ServiceHeader() {
             <div className="w-full h-3 -mt-3 bg-deep-purple-accent-400" />
           </span>
         </h2>
-        <p className="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-lg">
-        Stop wasting time with solutions that dont work. We prioritize
-            working software        </p>
+        <p className="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-base">
+        We prioritize delivering working and reliable software above all else. Our dedicated team is committed to providing you with a seamless and reliable cannabis software systems that gets the job done.       </p>
        
         <p className="max-w-md mb-10 text-xs font-thin tracking-wide text-gray-500 sm:text-sm sm:mx-auto md:mb-16">
         All in one place for your canna business
         </p>
         <a
-          href="/"
+          href=""
           aria-label="Scroll down"
           className="flex items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
         >
