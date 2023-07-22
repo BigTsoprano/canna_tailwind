@@ -83,7 +83,7 @@ const handleMenuToggle = () => {
       
           <Link
             href="/"
-            
+            onClick={() => setIsOpen(false)}
             className="inline-flex items-center"
             style={{letterSpacing:'normal !important', zIndex:'999', position: 'relative'}}
           >

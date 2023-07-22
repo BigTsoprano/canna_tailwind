@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/becomeapartner": [
+    "/price": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/becomeapartner.js"
+      "static/chunks/pages/price.js"
     ]
   },
   "ampFirstPages": []
