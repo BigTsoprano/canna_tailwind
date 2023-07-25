@@ -132,19 +132,17 @@ function ServiceLinksTwo() {
         </div>
       </div>
 
-      {/* <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+      <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
         <div className="order-none md:order-2">
           <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl">
-            Decide how you integrate Payments
+          Need your own profitable marketplace solution?
           </h2>
-          <p className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
-            Love to code? Next to our ready-made and free plugins you can use
-            our expansive yet simple API; decide how you integrate Payments and
-            build advanced and reliable products yourself from scratch.
+          <p className="mb-5 text-base text-center text-gray-700 sm:text-left md:text-base">
+          From the very inception of your marketplace concept to its realization, we'll be by your side, providing expert guidance at every turn. Our meticulous attention to detail ensures that your marketplace not only launches seamlessly but also operates flawlessly in the long run.
           </p>
           <a
             className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
-            href="/"
+            href="/services/marketplace"
           >
             <span style={{ color: "#000" }}>Learn more</span>
             <svg
@@ -178,7 +176,7 @@ function ServiceLinksTwo() {
             alt="ecommerce"
           />
         </div>
-      </div> */}
+      </div> 
     </section>
   );
 }

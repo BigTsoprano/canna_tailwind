@@ -63,10 +63,10 @@ const Footer = () => {
                     href: '/services/pos',
                     name: 'Pos system'
                 },
-                // {
-                //     href: '/services',
-                //     name: 'MarketplaceB2B'
-                // },
+                {
+                    href: '/services/marketplace',
+                    name: 'MarketplaceB2B'
+                },
                 // {
                 //     href: '/services',
                 //     name: 'Management software'
