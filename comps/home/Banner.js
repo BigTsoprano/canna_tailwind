@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default () => {
     return (
-        <div className="py-14 bg-white">
+        <div className="py-14 bg-slate-100">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-xl mx-auto text-center">
                     <h3 className="text-gray-800 text-3xl font-sans text-3xl font-bold sm:text-4xl">

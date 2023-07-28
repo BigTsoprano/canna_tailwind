@@ -9,6 +9,21 @@ import CloseIcon from '@mui/icons-material/Close';
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Image from "next/image";
 import NavMob from "./NavMob";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ShopTwoOutlinedIcon from '@mui/icons-material/ShopTwoOutlined';
+import AppsIcon from '@mui/icons-material/Apps';
+import AddBusinessOutlinedIcon from '@mui/icons-material/AddBusinessOutlined';
+import TuneOutlinedIcon from '@mui/icons-material/TuneOutlined';
+import VideoSettingsOutlinedIcon from '@mui/icons-material/VideoSettingsOutlined';
+import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
+import StorageOutlinedIcon from '@mui/icons-material/StorageOutlined';
+import SchemaIcon from '@mui/icons-material/Schema';
+import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
+import ConnectedTvIcon from '@mui/icons-material/ConnectedTv';
+import DvrIcon from '@mui/icons-material/Dvr';
+
+
 
 
 function HideOnScroll({ children }) {
@@ -70,11 +85,44 @@ useEffect(() => {
 
 const [isOpen, setIsOpen] = useState(false)
 
+const [show, setShow] = useState(false);
+const [leaveTimeout, setLeaveTimeout] = useState(null);
+
+const handlePopoverEnter = () => {
+  clearTimeout(leaveTimeout);
+  setShow(true);
+  setVisible(false);
+};
+
+const handlePopoverLeave = () => {
+  const timeout = setTimeout(() => {
+    setShow(false);
+  }, 1000); // Delay duration: 2000 milliseconds (2 seconds)
+  setLeaveTimeout(timeout);
+};
+
 
 
 const handleMenuToggle = () => {
   setIsOpen((prevOpen) => !prevOpen);
 };
+
+const [visible, setVisible] = useState(false);
+
+const handleVisibleEnter = () => {
+  clearTimeout(leaveTimeout);
+  setVisible(true);
+  setShow(false);
+}
+const handleVisibleLeave = () => {
+  const timeout = setTimeout(() => {
+    setVisible(false);
+  }, 1000); // Delay duration: 2000 milliseconds (2 seconds)
+  setLeaveTimeout(timeout);
+};
+
+
+
   return (
     <div className="">
       <HideOnScroll>
@@ -92,7 +140,13 @@ const handleMenuToggle = () => {
             </span>
           </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
-            <motion.li  whileHover={{ scale: 1.1 }}> 
+           <div style={{display:'flex', flexDirection:'column', alignItems:"flex-start"}}>
+            <motion.li 
+                        onMouseLeave={handlePopoverLeave}
+
+            onMouseEnter={handlePopoverEnter}
+    whileHover={{ scale: 1.1 }}> 
+              
               <a
              
                 href="/services"
@@ -102,7 +156,123 @@ const handleMenuToggle = () => {
               >
                 Services
               </a>
+              <KeyboardArrowDownIcon className="text-slate-500 text-lg"/>
+            
             </motion.li>
+           {show && (
+           
+            <motion.ul 
+            initial={{ opacity: 0,  }}
+            animate={{
+              
+               opacity: 1,
+            }}
+            exit={{ opacity: 0 }}
+            transition={{
+              type: "spring",
+              bounce: 0,
+              duration: 0.4,
+              delay: 0,
+              ease: "easeInOut",
+            }}
+            whileHover={{scale:1.05, y:8}}  onMouseEnter={handlePopoverEnter}
+            onMouseLeave={handlePopoverLeave}
+            
+             style={{position:'absolute', top:'8vh', zIdex:'999', backgroundColor:'#fff'}} className="space-y-1 
+            hover:border  hover:border-green-500 rounded shadow-md hover:shadow-lg ">
+  <li>
+    <a
+      href="/services"
+      className="block rounded bg-green-100 px-4 py-2 text-sm font-medium text-gray-700"
+    >
+      <AppsIcon className="text-green-600" style={{paddingRight:'6px', fontSize:'28px'}}/>
+All services
+<ArrowForwardIcon className="text-green-600" style={{paddingLeft:'3px', fontSize:'18px'}}/>
+
+    </a>
+  </li>
+
+  <li 
+            >
+    <a
+    style={{display:'flex', flexDirection:'row', alignItems:'center'}}
+      href="/services/ecommerce"
+      className="block rounded  px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
+    >
+      <ShopTwoOutlinedIcon className="text-green-600" style={{paddingRight:'6px', fontSize:'28px'}}/>
+Ecommerce
+<ArrowForwardIcon className="text-green-600" style={{paddingLeft:'3px', fontSize:'18px'}}/>
+    </a>
+ 
+  </li>
+
+  <li >
+    <a
+      href="/services/branding"
+      className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
+    >
+      <AddBusinessOutlinedIcon className="text-green-600" style={{paddingRight:'6px', fontSize:'28px'}}/>
+      Branding
+      <ArrowForwardIcon className="text-green-600" style={{paddingLeft:'3px', fontSize:'18px'}}/>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="/services/custom"
+      className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
+    >
+      <TuneOutlinedIcon className="text-green-600" style={{paddingRight:'6px', fontSize:'28px'}}/>
+Custom software
+<ArrowForwardIcon className="text-green-600" style={{paddingLeft:'3px', fontSize:'18px'}}/>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="/services/cms"
+      className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
+    >
+      <VideoSettingsOutlinedIcon className="text-green-600" style={{paddingRight:'6px', fontSize:'28px'}}/>
+      CMS
+      <ArrowForwardIcon className="text-green-600" style={{paddingLeft:'3px', fontSize:'18px'}}/>
+    </a>
+  </li>
+  <li>
+    <a
+      href="/services/it"
+      className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
+    >
+      <SupportAgentOutlinedIcon className="text-green-600" style={{paddingRight:'6px', fontSize:'28px'}}/>
+      IT services
+      <ArrowForwardIcon className="text-green-600" style={{paddingLeft:'3px', fontSize:'18px'}}/>
+    </a>
+  </li>
+  <li>
+    <a
+      href="/services/pos"
+      className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
+    >
+      <StorageOutlinedIcon className="text-green-600" style={{paddingRight:'6px', fontSize:'28px'}}/>
+      POS system
+      <ArrowForwardIcon className="text-green-600" style={{paddingLeft:'3px', fontSize:'18px'}}/>
+    </a>
+  </li>
+  <li>
+    <a
+      href="/services/marketplace"
+      className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
+    >
+      <SchemaIcon className="text-green-600" style={{paddingRight:'6px', fontSize:'28px'}}/>
+MarketplaceB2B
+<ArrowForwardIcon className="text-green-600" style={{paddingLeft:'3px', fontSize:'18px'}}/>
+    </a>
+  </li>
+
+</motion.ul>
+
+            )}
+</div>
             <motion.li  whileHover={{ scale: 1.1 }}> 
               <a
                 href="/about"
@@ -123,14 +293,82 @@ const handleMenuToggle = () => {
                 Pricing
               </a>
               </motion.li>
-            <motion.li  whileHover={{ scale: 1.1 }}  transition={{ type: "spring", }}> 
+              <div style={{display:'flex', flexDirection:'column', alignItems:"flex-start"}}>
+
+            <motion.li  onMouseEnter={handleVisibleEnter}
+            onMouseLeave={handleVisibleLeave}
+            whileHover={{ scale: 1.1 }}  transition={{ type: "spring", }}> 
               <Link href="/#demo"                 className="text-sm font-semibold tracking-wide transition-colors duration-200 relative after:absolute after:bg-green-600 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-100 after:transition after:ease-in-out after:duration-200  transition-colors duration-200 hover:text-teal-accent-400"
 >
              
                 Demos
-              
+                <KeyboardArrowDownIcon className="text-slate-500 text-lg"/>
+
               </Link>
               </motion.li>
+              {visible && (
+             
+            <motion.ul 
+             initial={{ opacity: 0,  }}
+             animate={{
+               
+                opacity: 1,
+             }}
+             exit={{ opacity: 0 }}
+             transition={{
+               type: "spring",
+               bounce: 0,
+               duration: 0.4,
+               delay: 0,
+               ease: "easeInOut",
+             }}
+            onMouseEnter={handleVisibleEnter}
+            onMouseLeave={handleVisibleLeave}   whileHover={{scale:1.05, y:8}}  
+           
+             style={{position:'absolute', top:'8vh', zIdex:'999', backgroundColor:'#fff'}} className="space-y-1 
+            hover:border  hover:border-green-500 rounded shadow-md hover:shadow-lg ">
+  <li  >
+    <a
+      href="/#demo"
+      className="block rounded bg-green-100 px-4 py-2 text-sm font-medium text-gray-700"
+    >
+      <CollectionsBookmarkIcon className="text-green-600" style={{paddingRight:'6px', fontSize:'28px'}}/>
+All demos
+<ArrowForwardIcon className="text-green-600" style={{paddingLeft:'3px', fontSize:'18px'}}/>
+
+    </a>
+  </li>
+
+  <li 
+            >
+    <a
+    style={{display:'flex', flexDirection:'row', alignItems:'center'}}
+      href="https://demo.01ninjas.com"
+      className="block rounded  px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
+    >
+      <ConnectedTvIcon className="text-green-600" style={{paddingRight:'6px', fontSize:'28px'}}/>
+Starter demo
+<ArrowForwardIcon className="text-green-600" style={{paddingLeft:'3px', fontSize:'18px'}}/>
+    </a>
+ 
+  </li>
+
+  <li  >
+    <a
+      href="https://cart.01ninjas.com"
+      className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
+    >
+      <DvrIcon className="text-green-600" style={{paddingRight:'6px', fontSize:'28px'}}/>
+      Advance filter demo
+      <ArrowForwardIcon className="text-green-600" style={{paddingLeft:'3px', fontSize:'18px'}}/>
+    </a>
+  </li>
+
+
+</motion.ul>
+
+            )}
+            </div>
           </ul>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
@@ -139,6 +377,7 @@ const handleMenuToggle = () => {
           </Link>
             </li>
           </ul>
+          
           <div className="lg:hidden">
           <button
         style={{ zIndex: '999', position: 'relative' }}

@@ -12,7 +12,7 @@ function DemoBanner() {
         <p className="mb-6 text-sm font-base text-slate-800 font-sans lg:text-base">Our interactive demos, offer a vivid representation of the capabilities and potential of our ecommerce solution with a wide array of features, including an intuitive user interface, advanced filtering cart system, seamless checkout process, and robust security measures.  </p>
                <div style={{display:'flex', flexDirection:'row', alignItems:'center'}}>
                 <div>
-               <Link href="/#demo">
+               <Link href="/services">
           <motion.button  whileHover={{scale:1.1}} whileTap={{ scale: 0.9 }} style={{padding:'10px 16px', marginRight:'1rem'}} className="group [transform:translateZ(0)]  rounded hover:border hover:border-black overflow-hidden bg-green-500 relative before:absolute before:bg-white before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:text-black hover:text-black before:duration-500"><span className="relative z-0 text-white hover:text-black text-sm group-hover:text-black transition font-semibold ease-in-out duration-600">View demos</span></motion.button>
           </Link>
           </div>

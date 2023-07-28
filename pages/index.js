@@ -9,6 +9,7 @@ import OtherHome from "@/comps/home/OtherHome";
 import Demos from "@/comps/home/Demos";
 import DemoBanner from "@/comps/home/DemoBanner";
 import HomeComp from "@/comps/home/HomeComp";
+import FeatureScroll from "@/comps/home/FeatureScroll";
 
 
 
@@ -19,7 +20,8 @@ export default function Home() {
    <section>
     <Hero/>
     <DemoBanner/>
-    <Features/>
+    <FeatureScroll/>
+    {/* <Features/> */}
     <EcommFeature/>
     <HomeComp/>
     

@@ -5,7 +5,7 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 function HomeComp() {
   return (
    
-<div className="max-w-[85rem] bg-slate-100 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div className="max-w-[85rem] bg-white px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <div className="aspect-w-16 aspect-h-7">
     <img style={{height:'100%', minHeight:'200px'}} className="w-full shadow-md object-cover rounded" src="/compliance_three.png" alt="Image Description"/>
   </div>

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function Demos() {
   return (
-<div id="demo" className="bg-slate-100 py-6 sm:py-8 lg:py-12">
+<div id="demo" className="white py-6 sm:py-8 lg:py-12">
   <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
     
     <div className="mb-10 md:mb-16">

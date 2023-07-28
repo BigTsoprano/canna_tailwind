@@ -1,23 +1,33 @@
 import React from 'react'
 import Link from 'next/link'
 import { motion } from "framer-motion";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
 
 
 
 function NavMob() {
   return (
     <div>
-         <nav style={{paddingTop:'3rem'}} className="">
+         <nav style={{paddingTop:'3rem', zIndex:'9999'}} className="">
                     <ul 
                    
                     className="space-y-4">
-                      <li >
+                      <li  >
                        
                       <a 
                     className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
                     href='/services'>
                   <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-base text-slate-900'>Services</span>  
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
+                    <KeyboardArrowDownIcon className="text-slate-500 text-2xl"/>
+                </a>
+                <ul style={{paddingLeft:'2rem'}}>
+                <li className='py-1'>
+                <a 
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    href='/about'>
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm text-slate-800'>All services</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
                 </a>
@@ -26,6 +36,114 @@ function NavMob() {
                     transform: translateX(5px)
                 }
             `}</style>
+                </li>
+                <li className='pb-1'>
+                <a 
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    href='/services/ecommerce'>
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm text-slate-800'>Ecommerce</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                <style jsx>{`
+                .cta-pr-btn:hover svg {
+                    transform: translateX(5px)
+                }
+            `}</style>
+                </li>
+                <li className='pb-1'>
+                <a 
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    href='/services/branding'>
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm text-slate-800'>Branding</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                <style jsx>{`
+                .cta-pr-btn:hover svg {
+                    transform: translateX(5px)
+                }
+            `}</style>
+                </li>
+                <li className='pb-1'>
+                <a 
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    href='/services/custom'>
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm text-slate-800'>Custom software</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                <style jsx>{`
+                .cta-pr-btn:hover svg {
+                    transform: translateX(5px)
+                }
+            `}</style>
+                </li>
+                <li className='pb-1'>
+                <a 
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    href='/services/cms'>
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm text-slate-800'>Content management</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                <style jsx>{`
+                .cta-pr-btn:hover svg {
+                    transform: translateX(5px)
+                }
+            `}</style>
+                </li>
+                <li className='pb-1'>
+                <a 
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    href='/services/it'>
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm text-slate-800'>IT services</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                <style jsx>{`
+                .cta-pr-btn:hover svg {
+                    transform: translateX(5px)
+                }
+            `}</style>
+                </li>
+                <li className='pb-1'>
+                <a 
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    href='/services/pos'>
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm text-slate-800'>Point of sale</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                <style jsx>{`
+                .cta-pr-btn:hover svg {
+                    transform: translateX(5px)
+                }
+            `}</style>
+                </li>
+                <li className='pb-1'>
+                <a 
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    href='/services/marketplace'>
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm text-slate-800'>Marketplace</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                <style jsx>{`
+                .cta-pr-btn:hover svg {
+                    transform: translateX(5px)
+                }
+            `}</style>
+                </li>
+                </ul>
+               
                       </li>
                       <li>
                       <a 
@@ -62,7 +180,15 @@ function NavMob() {
                     className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
                     href='/#demo'>
                   <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-base text-slate-900'>Demos</span>  
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
+                  <KeyboardArrowDownIcon className="text-slate-500 text-2xl"/>
+                </a>
+                <ul style={{paddingLeft:'2rem'}}>
+                <li className='py-1'>
+                <a 
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    href='/#demo'>
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm text-slate-800'>All demos</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
                 </a>
@@ -71,6 +197,38 @@ function NavMob() {
                     transform: translateX(5px)
                 }
             `}</style>
+               </li>
+                <li className='pb-1'>
+                <a 
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    href='https://demo.01ninjas.com'>
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm text-slate-800'>Starter demo</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                <style jsx>{`
+                .cta-pr-btn:hover svg {
+                    transform: translateX(5px)
+                }
+            `}</style>
+            </li>
+            <li>
+            <a 
+                    className="cta-pr-btn  bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                    href='https://cart.01ninjas.com'>
+                  <span className='relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 text-sm text-slate-800'>Advance filter demo</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="#22C55E">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                <style jsx>{`
+                .cta-pr-btn:hover svg {
+                    transform: translateX(5px)
+                }
+            `}</style>
+            </li>
+               </ul>
                       </li>
                       
                       <li>

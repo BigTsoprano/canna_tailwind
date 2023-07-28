@@ -6,68 +6,57 @@ import Link from 'next/link';
 
 function marketplace() {
 
-  const features = [
-    {
-        title: "Fast Refresh",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
-    },
-    {
-        title: "Analytics",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
-    },
-    {
-        title: "Datacenter security",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
-    },
-    {
-        title: "Build on your terms",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
-    },
-    {
-        title: "Safe to use",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
-    },
-    {
-        title: "Flexible",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
-    },
-]
 
   return (
     <div>
-    <div className="relative bg-white flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0">
-      <div className="flex flex-col items-start w-full max-w-xl px-4 mx-auto lg:px-8 lg:max-w-screen-xl">
-        <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-          <div className="max-w-xl mb-6">
-        
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-            Unleash the Power
-              <br className="hidden md:block" />
-              of Multi-Vendor{' '}
-              <span className="inline-block text-deep-purple-accent-400">
-              Marketplaces
-              </span>
-            </h2>
-            <p className="text-base text-gray-800 md:text-base">
-            Introducing our Multi-Vendor Marketplace -an innovative online store where a variety of vendors can showcase and sell their products. With our expertise in building user-friendly, efficient, and secure marketplaces for the cannabis industry, we empower businesses to thrive in the digital landscape while delivering exceptional experiences to their customers. 
-            </p>
-          </div>
-          <div className="flex flex-col items-center md:flex-row">
-          <Link href="/becomeapartner">
-
-<motion.div whileHover={{scale:1.1}} whileTap={{ scale: 0.9 }} style={{padding:'10px 16px'}} className="group [transform:translateZ(0)]  rounded hover:border hover:border-black overflow-hidden bg-green-500 relative before:absolute before:bg-white before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:text-black hover:text-black before:duration-500"><span className="relative z-0 text-white hover:text-black text-sm group-hover:text-black transition font-semibold ease-in-out duration-600">Get started</span></motion.div>
-</Link>
-          </div>
+       <div className="flex flex-col items-center justify-center px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-32 md:px-0">
+      <div className="flex flex-col items-center max-w-2xl md:px-8">
+        <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+     
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            <span className="relative inline-block">
+              <svg
+                viewBox="0 0 52 24"
+                fill="#22c55e"
+                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+              >
+                <defs>
+                  <pattern
+                    id="192913ce-1f29-4abd-b545-0fbccfd2b0ec"
+                    x="0"
+                    y="0"
+                    width=".135"
+                    height=".30"
+                  >
+                    <circle cx="1" cy="1" r=".7" />
+                  </pattern>
+                </defs>
+                <rect
+                  fill="url(#192913ce-1f29-4abd-b545-0fbccfd2b0ec)"
+                  width="52"
+                  height="24"
+                />
+              </svg>
+              <span className="relative">Unleash the</span>
+            </span>{' '}
+             Power
+of Multi-Vendor Marketplaces
+          </h2>
+          <p className="text-base text-gray-800 md:text-base">
+          Introducing our Multi-Vendor Marketplace -an innovative online store where a variety of vendors can showcase and sell their products. With our expertise in building user-friendly, efficient, and secure marketplaces for the cannabis industry, we empower businesses to thrive in the digital landscape.
+          </p>
         </div>
+       
+     
       </div>
-      <div className="inset-y-0 right-0 w-full max-w-xl px-4 mx-auto lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
-        <img
-          className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none sm:h-96 lg:h-full"
-          src="/market_hero.png"
-          alt=""
-        />
-      </div>
+      <img
+        src="/market_header.png"
+        className="w-full max-w-screen-sm mx-auto rounded shadow-none md:w-auto lg:max-w-screen-md"
+        alt=""
+      />
     </div>
+    {/* new section */}
+  
 
     {/* new section */}
 
@@ -176,8 +165,8 @@ function marketplace() {
         <div className="relative h-64 sm:h-80 lg:h-full">
           <img
             alt="House"
-            src="/market_b2b.png"
-            className="absolute inset-0 h-full w-full object-cover"
+            src="/market_feature.png"
+            className="absolute inset-0 h-full w-full object-contain"
           />
         </div>
       </div>
@@ -396,40 +385,110 @@ function marketplace() {
                 </div>
       
 {/* new section */}
-{/* <div className="py-14">
-            <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-                <div className="max-w-xl space-y-3">
-              
-                    <p className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Everything you need to grow
-                    </p>
-                    <p className='text-base text-slate-800'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus
-                    </p>
-                </div>
-                <div className="mt-12">
-                    <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
-                        {
-                            features.map((item, idx) => (
-                                <li key={idx} className="space-y-3">
-                                    <div className="w-12 h-12 border text-indigo-600 rounded-lg flex items-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                                        </svg>
-                                    </div>
-                                    <h4 className="text-base text-gray-800 font-semibold">
-                                        {item.title}
-                                    </h4>
-                                    <p className='text-sm text-slate-700' >
-                                        {item.desc}
-                                    </p>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </div>
-            </div>
-        </div> */}
+<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <span className="relative inline-block">
+            <svg
+              viewBox="0 0 52 24"
+              fill="#22c55e"
+              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+            >
+              <defs>
+                <pattern
+                  id="df31b9f6-a505-42f8-af91-d2b7c3218e5c"
+                  x="0"
+                  y="0"
+                  width=".135"
+                  height=".30"
+                >
+                  <circle cx="1" cy="1" r=".7" />
+                </pattern>
+              </defs>
+              <rect
+                fill="url(#df31b9f6-a505-42f8-af91-d2b7c3218e5c)"
+                width="52"
+                height="24"
+              />
+            </svg>
+            <span className="relative">We</span>
+          </span>{' '}
+         develop Marketplaces for
+        </h2>
+        <p className="text-base text-gray-800 md:text-base">
+        Our team has the expertise and experience to handle any challenge in developing online marketplaces, regardless of the size of your business. We work closely with our clients to understand their specific needs and tailor our solutions accordingly, creating a custom-built marketplace.
+        </p>
+      </div>
+      <div className="grid gap-8 row-gap-8 lg:grid-cols-3">
+        <div className="sm:text-center">
+          <div className="flex items-center justify-center w-8 h-8 mb-4 rounded-full bg-green-100 sm:mx-auto sm:w-12 sm:h-12">
+            <svg
+              className="w-6 h-6 text-deep-purple-accent-400 sm:w-10 sm:h-10"
+              stroke="#22c55e"
+              viewBox="0 0 52 52"
+            >
+              <polygon
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+                points="29 13 14 29 25 29 23 39 38 23 27 23"
+              />
+            </svg>
+          </div>
+          <h6 className="mb-2 font-semibold leading-5">Startups</h6>
+          <p className="max-w-md mb-3 text-sm text-gray-900 sm:mx-auto">
+          We adopt a meticulous and methodical approach to marketplace development, providing our clients with reliable plans and projections they can trust. Our dedicated team takes the time to deeply understand your unique needs and goals, allowing us to deliver a solution that surpasses all expectations.
+          </p>
+       
+        </div>
+        <div className="sm:text-center">
+          <div className="flex items-center justify-center w-8 h-8 mb-4 rounded-full bg-green-100 sm:mx-auto sm:w-12 sm:h-12">
+            <svg
+              className="w-6 h-6 text-deep-purple-accent-400 sm:w-10 sm:h-10"
+              stroke="#22c55e"
+              viewBox="0 0 52 52"
+            >
+              <polygon
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+                points="29 13 14 29 25 29 23 39 38 23 27 23"
+              />
+            </svg>
+          </div>
+          <h6 className="mb-2 font-semibold leading-5">Small & Medium Businesses</h6>
+          <p className="max-w-md mb-3 text-sm text-gray-900 sm:mx-auto">
+          Our approach is centered around creating solutions that are customized to your business's requirements and goals. We work closely to understand your objectives and create custom-built features that deliver value to both your customers and your business.
+          </p>
+    
+        </div>
+        <div className="sm:text-center">
+          <div className="flex items-center justify-center w-8 h-8 mb-4 rounded-full bg-green-100 sm:mx-auto sm:w-12 sm:h-12">
+            <svg
+              className="w-6 h-6 text-deep-purple-accent-400 sm:w-10 sm:h-10"
+              stroke="#22c55e"
+              viewBox="0 0 52 52"
+            >
+              <polygon
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+                points="29 13 14 29 25 29 23 39 38 23 27 23"
+              />
+            </svg>
+          </div>
+          <h6 className="mb-2 font-semibold leading-5">Enterprises</h6>
+          <p className="max-w-md mb-3 text-sm text-gray-900 sm:mx-auto">
+          Your esteemed reputation and extensive clientele are highly valued by us, which is why we place great emphasis on forging close partnerships to achieve meaningful and impactful outcomes. Throughout the project process, we make it a priority to maintain open and transparent communication, keeping you informed and involved at every stage.
+          </p>
+      
+        </div>
+      </div>
+    </div>
+
 
     </div>
   )
