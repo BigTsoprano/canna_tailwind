@@ -416,7 +416,7 @@ Starter demo
            
               <motion.nav
       animate={isOpen ? "open" : "closed"}
-      variants={variants} style={{zIndex:'997'}}className="absolute top-0 left-0 w-full">
+      variants={variants} style={{zIndex:'997'}}className="fixed top-0 left-0 w-full">
                 <div className="p-5  bg-white border-b border-black  shadow-sm">
                 <NavMob />
                  
