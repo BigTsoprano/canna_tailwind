@@ -97,7 +97,7 @@ const handlePopoverEnter = () => {
 const handlePopoverLeave = () => {
   const timeout = setTimeout(() => {
     setShow(false);
-  }, 1000); // Delay duration: 2000 milliseconds (2 seconds)
+  }, 2000); // Delay duration: 2000 milliseconds (2 seconds)
   setLeaveTimeout(timeout);
 };
 
@@ -117,7 +117,7 @@ const handleVisibleEnter = () => {
 const handleVisibleLeave = () => {
   const timeout = setTimeout(() => {
     setVisible(false);
-  }, 1000); // Delay duration: 2000 milliseconds (2 seconds)
+  }, 2000); // Delay duration: 2000 milliseconds (2 seconds)
   setLeaveTimeout(timeout);
 };
 
