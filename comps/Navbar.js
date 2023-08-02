@@ -97,7 +97,7 @@ const handlePopoverEnter = () => {
 const handlePopoverLeave = () => {
   const timeout = setTimeout(() => {
     setShow(false);
-  }, 2000); // Delay duration: 2000 milliseconds (2 seconds)
+  }, 1000); // Delay duration: 2000 milliseconds (2 seconds)
   setLeaveTimeout(timeout);
 };
 
@@ -117,7 +117,7 @@ const handleVisibleEnter = () => {
 const handleVisibleLeave = () => {
   const timeout = setTimeout(() => {
     setVisible(false);
-  }, 2000); // Delay duration: 2000 milliseconds (2 seconds)
+  }, 1000); // Delay duration: 2000 milliseconds (2 seconds)
   setLeaveTimeout(timeout);
 };
 
@@ -160,7 +160,7 @@ const handleVisibleLeave = () => {
             
             </motion.li>
            {show && (
-           
+           <div >
             <motion.ul 
             initial={{ opacity: 0,  }}
             animate={{
@@ -175,13 +175,14 @@ const handleVisibleLeave = () => {
               delay: 0,
               ease: "easeInOut",
             }}
-            whileHover={{scale:1.05, y:8}}  onMouseEnter={handlePopoverEnter}
+            onMouseEnter={handlePopoverEnter}
             onMouseLeave={handlePopoverLeave}
             
              style={{position:'absolute', top:'8vh', zIdex:'999', backgroundColor:'#fff'}} className="space-y-1 
             hover:border  hover:border-green-500 rounded shadow-md hover:shadow-lg ">
   <li>
     <a
+    onMouseEnter={handlePopoverEnter}
       href="/services"
       className="block rounded bg-green-100 px-4 py-2 text-sm font-medium text-gray-700"
     >
@@ -195,6 +196,7 @@ All services
   <li 
             >
     <a
+    onMouseEnter={handlePopoverEnter}
     style={{display:'flex', flexDirection:'row', alignItems:'center'}}
       href="/services/ecommerce"
       className="block rounded  px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
@@ -208,6 +210,7 @@ Ecommerce
 
   <li >
     <a
+    onMouseEnter={handlePopoverEnter}
       href="/services/branding"
       className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
     >
@@ -219,6 +222,7 @@ Ecommerce
 
   <li>
     <a
+    onMouseEnter={handlePopoverEnter}
       href="/services/custom"
       className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
     >
@@ -230,6 +234,7 @@ Custom software
 
   <li>
     <a
+    onMouseEnter={handlePopoverEnter}
       href="/services/cms"
       className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
     >
@@ -240,6 +245,7 @@ Custom software
   </li>
   <li>
     <a
+    onMouseEnter={handlePopoverEnter}
       href="/services/it"
       className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
     >
@@ -250,6 +256,7 @@ Custom software
   </li>
   <li>
     <a
+    onMouseEnter={handlePopoverEnter}
       href="/services/pos"
       className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
     >
@@ -260,6 +267,7 @@ Custom software
   </li>
   <li>
     <a
+    onMouseEnter={handlePopoverEnter}
       href="/services/marketplace"
       className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
     >
@@ -270,6 +278,7 @@ MarketplaceB2B
   </li>
 
 </motion.ul>
+</div>
 
             )}
 </div>
@@ -323,12 +332,13 @@ MarketplaceB2B
                ease: "easeInOut",
              }}
             onMouseEnter={handleVisibleEnter}
-            onMouseLeave={handleVisibleLeave}   whileHover={{scale:1.05, y:8}}  
+            onMouseLeave={handleVisibleLeave}   
            
              style={{position:'absolute', top:'8vh', zIdex:'999', backgroundColor:'#fff'}} className="space-y-1 
             hover:border  hover:border-green-500 rounded shadow-md hover:shadow-lg ">
   <li  >
     <a
+    onMouseEnter={handleVisibleEnter}
       href="/#demo"
       className="block rounded bg-green-100 px-4 py-2 text-sm font-medium text-gray-700"
     >
@@ -342,6 +352,7 @@ All demos
   <li 
             >
     <a
+    onMouseEnter={handleVisibleEnter}
     style={{display:'flex', flexDirection:'row', alignItems:'center'}}
       href="https://demo.01ninjas.com"
       className="block rounded  px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
@@ -355,6 +366,7 @@ Starter demo
 
   <li  >
     <a
+    onMouseEnter={handleVisibleEnter}
       href="https://cart.01ninjas.com"
       className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-green-100 hover:text-gray-700"
     >
